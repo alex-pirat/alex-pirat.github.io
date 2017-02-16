@@ -1,9 +1,3 @@
-.box {
-	height: 100px;
-	border: 2px solid #000;
-}
-.box-in {
-	height: 50px;
-	background: green;
-	border: 2px dashed red;
+.lessons ul li {
+	list-style: none;
 }
