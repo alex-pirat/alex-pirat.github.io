@@ -11,8 +11,9 @@ body {
 	background-color: #000;
 	height: 50px;
 	text-align: center;
-	top: 0;
+	left: 0;
 	right: 0;
+	top: 0;
 }
 .header-fix nav li {
 	display: inline-block;
@@ -25,7 +26,6 @@ body {
 .header-fix nav a:hover {
 	color: green;
 }
-.content p {
-	position: absolute;
+.content {
 	margin-top: 60px;
 }
