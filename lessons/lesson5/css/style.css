@@ -1,0 +1,13 @@
+body{
+	background-color: #aeaeae;
+}
+h1{
+	text-align: center;
+}
+.green{
+	color: green;
+}
+.bold{
+	font-weight: bold;
+	text-decoration: underline;
+}

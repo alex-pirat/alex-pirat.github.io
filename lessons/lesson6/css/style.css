@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.porshe {
+	width: 250px;
+
+}
+.cart img {
+	width: 30px;
+	display: block;
+	margin-left: 100px;
+}
+#example_1 {
+	background-image: url(../img/jango.jpg);
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
+#example_2 {
+	height: 100vh;
+	background-image: url(../img/pattern.jpg);
+}
