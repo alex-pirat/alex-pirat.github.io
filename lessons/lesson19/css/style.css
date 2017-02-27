@@ -290,6 +290,9 @@ i.fa-camera-retro {
   height: 360px;
   position: relative;
 }
+.works-box img {
+  width: 100%;
+}
 .signature {
   opacity: 0;
   position: absolute;
@@ -716,4 +719,78 @@ Modal Window
 }
 .modal-title {
   font-weight: bold;
+}
+/* Adaptive */
+@media (min-width: 0px) and (max-width: 480px) {
+  .main-text h1 {
+    font-size: 28px;
+  }
+  .section-header h2 {
+    font-size: 22px;
+  }
+  .process-box {
+    margin-top: 75px;
+  }
+  .services-list {
+    text-align: center;
+  }
+  .services-list-item {
+    display: inline-block;
+  }
+}
+@media (max-width: 480px) {
+  .works-box {
+    height: 270px;
+  }
+  .services-info img {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .process-box {
+    margin-top: 75px;
+  }
+  .services-list {
+    text-align: center;
+  }
+  .services-list-item {
+    display: inline-block;
+  }
+  .works-box {
+    height: 365px;
+  }
+  .services-info img {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .process-box {
+    margin-top: 75px;
+  }
+  .works-box {
+    height: 220px;
+  }
+  .services-list {
+    text-align: center;
+  }
+  .services-list-item {
+    display: inline-block;
+  }
+  .services-info img {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .works-box {
+    height: 294px;
+  }
+  .services-list {
+    text-align: center;
+  }
+  .services-list-item {
+    display: inline-block;
+  }
+  .services-info img {
+    margin-top: 30px;
+  }
 }
