@@ -761,6 +761,7 @@ Modal Window
   }
   .services-info img {
     margin-top: 30px;
+    margin-left: 27%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -778,6 +779,7 @@ Modal Window
   }
   .services-info img {
     margin-top: 30px;
+    margin-left: 30%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -792,5 +794,6 @@ Modal Window
   }
   .services-info img {
     margin-top: 30px;
+    margin-left: 30%;
   }
 }
