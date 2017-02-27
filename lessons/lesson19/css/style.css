@@ -389,7 +389,7 @@ i.fa-camera-retro {
 }
 /* Accordion */
 .panel.panel-default {
-  width: 60%;
+  width: 75%;
   margin: 2% auto;
 }
 .panel.panel-default:first-child {
@@ -754,6 +754,9 @@ Modal Window
   .gallery-arrow-right {
     right: 0px;
   }
+  .panel.panel-default {
+    width: 96%;
+  }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .process-box {
@@ -781,6 +784,9 @@ Modal Window
   .gallery-arrow-right {
     right: 45%;
   }
+  .panel.panel-default {
+    width: 96%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .process-box {
@@ -807,6 +813,9 @@ Modal Window
   }
   .gallery-arrow-right {
     right: 25px;
+  }
+  .panel.panel-default {
+    width: 80%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
