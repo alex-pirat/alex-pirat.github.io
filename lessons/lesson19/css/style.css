@@ -737,8 +737,6 @@ Modal Window
   .services-list-item {
     display: inline-block;
   }
-}
-@media (max-width: 480px) {
   .works-box {
     height: 270px;
   }
@@ -782,7 +780,7 @@ Modal Window
     left: 0px;
   }
   .gallery-arrow-right {
-    right: 45%;
+    right: 0px;
   }
   .panel.panel-default {
     width: 96%;
