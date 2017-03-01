@@ -1,4 +1,44 @@
-.lessons ul li {
+body {
+	background: #0C182D;
+	color: #D5A677
+}
+ul li {
 	list-style: none;
+	background: #613123;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	border-radius: 25px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	display: block;
+	padding: 15px 25px;
+	margin: 15px;
+	float: left;
+	width: 300px;
+	height: 150px;
 }
 
+ ul li a {
+	color: #D5A677;
+	display: inline-block;
+	margin-top: 50px;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	font-size: 20px;
+
+}
+ul li a:hover {
+	text-decoration: none;
+	color: #D5A677;
+	font-size: 22px;
+}
+ul li:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
