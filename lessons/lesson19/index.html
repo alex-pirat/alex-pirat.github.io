@@ -48,11 +48,12 @@
                 <div class="col-lg-4 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
                     <div class="main-form wow zoomIn" data-wow-delay="1.5s">
                         <p class="main-form-header"><span>Send</span> A Message</p>
-                        <form action="#">
-                           <input type="text" placeholder="Your Name"> 
-                           <input type="email" required placeholder="Your Email">
+                        <form action="#" id="main-form">
+                           <input id="userName" type="text" placeholder="Your Name"> 
+                           <input type="email" placeholder="Your Email">
+                           <input type="tel" id="phone" placeholder="Your Phone">
                            <textarea rows="3" placeholder="Your Message"></textarea>
-                           <button type="submit" class="main-form-btn">Send Message <span>&rarr;</span></button>
+                           <button id="submit-form" type="submit" class="main-form-btn">Send Message <span>&rarr;</span></button>
                         </form>
                     </div>
                 </div>
@@ -575,6 +576,24 @@
     </div>
 </div>
 
+<div class="modal fade" id="modal-3" tabindex="-1" data-backdrop="true" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">Thank you<span id="nameUser"></span></h4>
+            </div>
+            <div class="modal-body">
+               <p>We'll call you soon!</p>
+                    
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
                 <!-- Красивое окно -->
@@ -615,7 +634,16 @@
 
     <div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
 
-    
+    <div class="overlay-nav">
+        <span class="close-nav">&times;</span>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Карта</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
 
 
 
@@ -680,6 +708,36 @@
 
               });
             });
+    </script>
+    <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script>
+        jQuery(function($){
+           $("#phone").mask("+7 (999) 999-99-99");
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var $nav = $('a.main-nav-bar');
+            $nav.click(function() {
+                $('.overlay-nav').show(500);
+            })
+            $('.close-nav').click(function() {
+                $('.overlay-nav').hide(500);
+            })
+            $('#submit-form').click(function() {
+                if ($('input#userName').val() !== '') {
+                    $('#main-form').submit();
+                } else {
+                    alert('Вы не заполнили поле имя!')
+                }
+            })
+            $('#submit-form').click(function() {
+                if ($('input#userName').val() !== '') {
+                    $('span#nameUser').text(', ' + $('input#userName').val());
+                    $('#modal-3').modal('show');
+                }
+            })
+        })
     </script>
   </body>
 </html>
