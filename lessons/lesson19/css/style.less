@@ -71,7 +71,7 @@ header {
 		p {
 			.opn-bold;
 			font-size: 36px;
-			color: @base-black;
+			color: @white;
 			span {
 				color: lighten(@base-red, 5%);
 			}
@@ -84,6 +84,7 @@ header {
 		height: 55px;
 	}
 	&-text {
+		color: @white;
 		margin-top: 8%;
 		text-align: center;
 		h1 {
@@ -657,7 +658,7 @@ Modal Window
   left: 0;
 }
 .cd-modal svg > path {
-  fill: #D3C2CC;
+  fill: #ebe7b9;
 }
 
 .cd-modal .modal-close {
@@ -716,7 +717,7 @@ Modal Window
 }
 
 .cd-modal-content {
-	background: url(../img/gallery/if-no.jpg) no-repeat center center;
+	background: url(../img/gallery/bg.png) no-repeat center center;
   position: relative;
   height: 100vh;
   overflow-y: auto;
@@ -837,6 +838,10 @@ Modal Window
 	.panel.panel-default {
 		width: 96%;
 	}
+	.video-container {
+		display: none;
+	}
+
 }
 
 
@@ -871,6 +876,10 @@ Modal Window
 	.panel.panel-default {
 		width: 96%;
 	}
+	.video-container {
+		display: none;
+	}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -904,7 +913,9 @@ Modal Window
 	.panel.panel-default {
 		width: 80%;
 	}
-
+	.video-container {
+		display: none;
+	}
 
 }
 
@@ -988,4 +999,77 @@ Modal Window
 	&:hover {
 		cursor: pointer;
 	}
+}
+
+header {
+	position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+/* Parallax */
+.layer {
+	width: 350px;
+}
+#layer-1 {
+	width: 100%;
+	margin-left: -50%;
+	margin-top: 1%;
+}
+#layer-1 img {
+	margin-left: 10%;
+	height: 900px;
+	width: 1900px;
+}
+#layer-3 {
+	margin-top: 48%;
+	margin-left: 92%;
+}
+#layer-2 {
+	margin-top: 45%;
+	margin-left: 20%;
+}
+#layer-4 {
+	margin-top: 32%;
+	margin-left: 52%;
+}
+.parallax-window {
+	min-height: 400px;
+	margin-bottom: 100px;
+	min-width: 400px;
+	background: transparent;
 }
