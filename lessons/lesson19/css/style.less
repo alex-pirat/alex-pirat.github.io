@@ -793,12 +793,16 @@ Modal Window
 
 
 
-
-
 /* Adaptive */
 @media (min-width: 0px) and (max-width: 480px) {
 	.main {
+		&-head {
+			p {
+			color: @base-black;	
+			}
+		}
 		&-text {
+			color: @base-black;
 			h1 {
 				font-size: 28px;
 			}
@@ -819,7 +823,9 @@ Modal Window
 		}
 	}
 	.works-box {
-		height: 270px;
+		height: 50%;
+		margin-bottom: 20%;
+
 	}
 	.services-info {
 		img {
@@ -841,7 +847,26 @@ Modal Window
 	.video-container {
 		display: none;
 	}
-
+	#layer-1 {
+		img {
+			width: 100%;
+		}
+	}
+	#layer-2 {
+		img {
+			width: 50px;
+			height: 50%;
+		}
+		margin-top: 0%;
+		margin-left: 10%;
+	}
+	#layer-3 {
+		img {
+			width: 50%;
+		}
+		margin-top: 15%;
+		margin-left: 65%;
+	}
 }
 
 
@@ -856,7 +881,8 @@ Modal Window
 		}
 	}
 	.works-box {
-		height: 365px;
+		height: 60%;
+		margin-bottom: 25%;
 	}
 	.services-info {
 		img {
@@ -879,6 +905,17 @@ Modal Window
 	.video-container {
 		display: none;
 	}
+	.main {
+		&-head {
+			p {
+			color: @base-black;	
+			}
+		}
+		&-text {
+			color: @base-black;
+		}
+	}
+
 
 }
 
@@ -887,7 +924,7 @@ Modal Window
 		margin-top: 75px;
 	}
 	.works-box {
-		height: 220px;
+		height: 50%;
 	}
 	.services-list {
 		text-align: center;
@@ -916,7 +953,17 @@ Modal Window
 	.video-container {
 		display: none;
 	}
-
+	.main {
+		&-head {
+			p {
+			color: @base-black;	
+			}
+		}
+		&-text {
+			color: @base-black;
+		}
+	}
+	
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1042,31 +1089,30 @@ header {
 }
 
 /* Parallax */
-.layer {
-	width: 350px;
+#parallax {
+	min-height: 400px;
+	min-width: 400px;
 }
 #layer-1 {
-	width: 100%;
-	margin-left: -50%;
-	margin-top: 1%;
-}
-#layer-1 img {
-	margin-left: 10%;
-	height: 900px;
-	width: 1900px;
-}
-#layer-3 {
-	margin-top: 48%;
-	margin-left: 92%;
+	img {
+		width: 100%;
+	}
 }
 #layer-2 {
-	margin-top: 45%;
-	margin-left: 20%;
+	img {
+		width: 80%;
+	}
+	margin-top: 20%;
+	margin-left: 10%;
 }
-#layer-4 {
-	margin-top: 32%;
-	margin-left: 52%;
+#layer-3 {
+	img {
+		width: 70%;
+	}
+	margin-top: 15%;
+	margin-left: 65%;
 }
+
 .parallax-window {
 	min-height: 400px;
 	margin-bottom: 100px;
