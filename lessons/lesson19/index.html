@@ -18,6 +18,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Подключаем API Яндекс карт внутри тега head -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <header id="main">
@@ -517,6 +519,11 @@
             </div>
         </div>
     </section>
+
+	<div id="map" style="width: 100%; height: 400px">
+		
+	</div>
+
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -837,6 +844,43 @@
         $('#scene').parallax();
     </script>
     <script src="js/parallax.min.js"></script>
+
+
+
+    <!-- Настраиваем карту через JavaScript -->
+    <script type="text/javascript">
+    //создаем переменные "Карта" и "Метка"
+      ymaps.ready(init);
+      var myMap, 
+      myPlacemark;
+
+    //Инициализируем нашу карту, задав ей координаты, устанавливаем масштаб карты
+      function init(){ 
+        myMap = new ymaps.Map("map", {
+          center: [40.420275, -3.705766],
+          zoom: 12,
+        }); 
+
+    //Пишем свойства для нашей метки
+        myPlacemark = new ymaps.Placemark([40.420275, -3.705766], {
+          hintContent: 'Мадрид, Испания. Хочу!',
+          balloonContent: ''
+        }, {
+                // Опции.
+                // Необходимо указать данный тип макета. Показываем что это изображение.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки. Указываем путь до картинки
+                iconImageHref: 'img/ninja.png',
+                // Размеры метки. 
+                iconImageSize: [120, 169],
+                // Смещение левого верхнего угла иконки относительно её "ножки" (точки привязки).
+                iconImageOffset: [-80, 0]
+              });            
+        //Добавляем метку на карту + убираем скролл мышкой 
+        myMap.geoObjects.add(myPlacemark);  
+        myMap.behaviors.disable('scrollZoom');
+      }
+    </script>
 
   </body>
 </html>
