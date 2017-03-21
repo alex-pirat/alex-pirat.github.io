@@ -1,0 +1,171 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.home {
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 851px;
+}
+.home header .logo {
+  margin-top: 19px;
+  margin-left: 96px;
+  float: left;
+}
+.home header .navigation {
+  float: right;
+  margin-top: 10px;
+}
+.home header .navigation li {
+  list-style: none;
+  display: inline-block;
+  margin: 15px 8px;
+}
+.home header .navigation li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.home header .navigation li a:hover {
+  color: #fc5f45;
+}
+.home .main-text {
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 10%;
+}
+.home .main-text h1 {
+  font-size: 60px;
+}
+.home .main-text button {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  background: #fc5f45;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+  padding: 18px 40px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.home .main-text button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.home .block-three {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.home .block-three p {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 38px;
+}
+.home .block-three-1 {
+  flex-basis: 200px;
+  color: #38c695;
+}
+.home .block-three-2 {
+  flex-basis: 150px;
+  margin: 0 50px 100px;
+  color: #b27cf5;
+}
+.home .block-three-3 {
+  flex-basis: 232px;
+  color: #feb960;
+}
+.about {
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+.about-text {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -125px;
+  height: 550px;
+  width: 650px;
+  background: #fff;
+  padding: 85px 85px;
+  padding-right: 0;
+}
+.about-text h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 50px;
+  color: #313131;
+}
+.about-text p {
+  font-size: 15px;
+  color: #616161;
+}
+.about .line {
+  position: absolute;
+  left: 50%;
+  margin-left: -125px;
+  bottom: 94px;
+  width: 650px;
+}
+.focus h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 50px;
+  color: #313131;
+}
+.focus p {
+  font-size: 15px;
+  color: #616161;
+}
+.focus-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.focus-blocks-block {
+  flex-basis: 263px;
+  margin: 0px 10px;
+  padding-bottom: 60px;
+}
+.focus-blocks-block img {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.focus-blocks-block img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.focus-blocks-block p {
+  padding: 10px;
+}
+.focus-blocks .web {
+  margin-top: 140px;
+  border-bottom: 3px solid #fc5f45;
+}
+.focus-blocks .ux {
+  margin-top: 140px;
+  border-bottom: 3px solid #38c695;
+}
+.focus-blocks .photo {
+  margin-top: 140px;
+  border-bottom: 3px solid #b27cf5;
+}
+.focus-blocks .app {
+  margin-top: 140px;
+  border-bottom: 3px solid #feb960;
+}

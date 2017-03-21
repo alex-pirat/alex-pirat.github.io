@@ -1,44 +1,161 @@
 body {
-	background: #0C182D;
-	color: #D5A677
+  font-family: Tahoma, sans-serif;
 }
-ul li {
-	list-style: none;
-	background: #613123;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	-ms-border-radius: 25px;
-	-o-border-radius: 25px;
-	border-radius: 25px;
-	-webkit-transition: 0.2s;
-	-o-transition: 0.2s;
-	transition: 0.2s;
-	display: block;
-	padding: 15px 25px;
-	margin: 15px;
-	float: left;
-	width: 300px;
-	height: 150px;
+#mainMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
 }
-
- ul li a {
-	color: #D5A677;
-	display: inline-block;
-	margin-top: 50px;
-	-webkit-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
-	font-size: 20px;
-
+#mainMenu li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  margin: 15px;
+  margin-top: 0;
 }
-ul li a:hover {
-	text-decoration: none;
-	color: #D5A677;
-	font-size: 22px;
+#mainMenu li a {
+  color: #aeaeae;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
-ul li:hover {
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	transform: scale(1.1);
+#mainMenu li a:hover {
+  color: #000;
+}
+.section {
+  margin: 0;
+  padding: 0;
+}
+.section h1 {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'Libre Baskerville', serif;
+}
+.section h2 {
+  font-size: 36px;
+  font-family: 'Libre Baskerville', serif;
+}
+.section h3 {
+  font-family: 'Libre Baskerville', serif;
+}
+.section-main {
+  height: 100vh;
+  width: 100vw;
+  background: #ebebeb url(../img/ptitsa-truba-fon.jpg) no-repeat center center;
+  background-size: 100%;
+  margin: 0;
+}
+.section-portfolio {
+  margin-top: 15px;
+}
+.section-portfolio-block {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.section-portfolio-block .work-box {
+  position: relative;
+  width: 400px;
+  height: 266.6px;
+}
+.section-portfolio-block .work-box img {
+  width: 100%;
+}
+.section-portfolio-block .work-box .signature {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: #fff;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -align-items: center;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.section-portfolio-block .work-box .signature:hover {
+  opacity: 1;
+}
+.section-portfolio-block .work-box .signature .sign {
+  margin-top: 30%;
+}
+.section-portfolio-block .work-box .signature .sign button {
+  background: none;
+  border: 1px solid #515151;
+  outline: none;
+  padding: 10px 20px;
+}
+.section-portfolio-block .work-box .signature .sign button a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.section-portfolio-block .work-box .signature .sign p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.section-about {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.section-about p {
+  width: 400px;
+  display: inline-block;
+  border: 1px solid #717171;
+  border-top: 0;
+  border-bottom: 0;
+}
+.section-find {
+  height: 50px;
+  width: 100%;
+  background: url(../img/logo061-1024x450.png);
+}
+.section-find h3 {
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+}
+.section-find img {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.section-find img:hover {
+  background: #f4e28f;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -o-transform: scale(1.06);
+  transform: scale(1.06);
+}
+.section-find .left .fb {
+  height: 30px;
 }

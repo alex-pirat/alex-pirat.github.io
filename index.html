@@ -4,42 +4,137 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Описание сайта">
-    <meta name="keywords" content="ключевые слова">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Beб-разработчик 5.0</title>
-	  <!-- Bootstrap -->
+    <title>Alex-Web developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+   	<!-- <link rel="stylesheet" href="fullpage/jquery.fullPage.css"> -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="web">
-        <h1 class="text-center">Веб-разработчик 5.0</h1>
-        <section>
-            <div class="container">
-                <div class="lessons">
-                    <ul class="text-center">
-                        <li><a href="lessons/lesson10/header_menu.html">Урок 10 - header_menu</a></li>
-                        <li><a href="lessons/lesson10/popup.html">Урок 10 - popup</a></li>
-                        <li><a href="lessons/lesson19/index.html">Урок 27 - Аналитика на сайт. .</a></li>
-                        <li><a href="lessons/lesson25/index.html">Урок 25 - Flexbox.</a></li>
-                    </ul>
-                </div>
+  <body> 
+          <!-- Начало кода -->  
+      	<div id="mainMenu">
+      		<ul>
+      		      <li class="menu-li active" data-menuanchor="mail"><a href="#main">Main</a></li>
+      		      <li class="menu-li" data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+      		      <li class="menu-li" data-menuanchor="about"><a href="#about">About me</a></li>
+      		</ul>
+      	</div>
+        <div class="section section-main" id="main">
+        	<h1 class="text-center">
+	          	  Alex - Web-developer
+	        </h1>
+        </div>
+
+        <div class="section section-portfolio" id="portfolio">
+            <h2 class="text-center">My portfolio</h2>
+            <div class="row section-portfolio-block text-center">
+              <div class="work-box">
+              	<img src="portfolio/smart/smart-mockup.jpg" alt="Work">
+              	<div class="signature">
+              		<div class="sign">
+              			<button><a href="portfolio/smart/index.html">Посмотреть</a></button>
+              			<p>Smart</p>
+              		</div>
+              	</div>
+              </div>
+
+              <div class="work-box">
+              	<img src="portfolio/alexis/alexis-mock.jpg" alt="Work">
+              	<div class="signature">
+              		<div class="sign">
+              			<button><a href="portfolio/alexis/index.html">Посмотреть</a></button>
+              			<p>Alexis (в работе)</p>
+              		</div>
+              	</div>
+              </div>
+
+              <div class="work-box">
+              	<img src="portfolio/biruang/biruang-mockup.jpg" alt="Work">
+              	<div class="signature">
+              		<div class="sign">
+              			<button><a href="portfolio/biruang/index.html">Посмотреть</a></button>
+              			<p>Biruang</p>
+              		</div>
+              	</div>
+              </div>
+
+              <div class="work-box">
+              	<img src="portfolio/styletour/styletour-mockup.jpg" alt="Work">
+              	<div class="signature">
+              		<div class="sign">
+              			<button><a href="portfolio/styletour/index.html">Посмотреть</a></button>
+              			<p>Styletour (в работе)</p>
+              		</div>
+              	</div>
+              </div>
+
+              <div class="work-box">
+              	<img src="portfolio/one/one-mockup.jpg" alt="Work">
+              	<div class="signature">
+              		<div class="sign">
+              			<button><a href="portfolio/one/index.html">Посмотреть</a></button>
+              			<p>One (no adaptive)</p>
+              		</div>
+              	</div>
+              </div>
+
+              <div class="work-box">
+              	<img src="portfolio/m-store/m-store-mockup.jpg" alt="Work">
+              	<div class="signature">
+              		<div class="sign">
+              			<button><a href="portfolio/m-store/index.html">Посмотреть</a></button>
+              			<p>M-store (no adaptive)</p>
+              		</div>
+              	</div>
+              </div>
             </div>
-        </section>
-    </div>
+        </div>
 
+        <div class="section section-about" id="about">
+          	<div class="container">
+          		<div class="text-center">
+          			<h2>About me</h2>
+          			<p>Привет. Меня зовут Алексаднр. Я верстальщик. Отлично владею Html5 и Css3. Имею знания и навыки в Bootsrap 3, Препроцессоре Less, JavaScript/Jquery ( на уровне верстки ), GitHub. Использую Photoshop для верстки. Делаю сайты кроссбраузерными и адаптивными под все устройства.</p>
+          		</div>
+          	</div>
+        </div>
 
+        <div class="section-find text-center">
+        	<div class="left">
+        		<a href="https://vk.com/karasev_alex"><img src="img/vk.png" alt="VK"></a>
+        		<a href="https://www.facebook.com/profile.php?id=100004048585293"><img src="img/fb.png" alt="FB"></a>
+        		<a href="mailto:asquerquet@gmail.com"><img src="img/google.png" alt="google"></a>
+        	</div>
+        </div>
+
+        <footer></footer>
+      <!-- Конец кода -->
+
+    <script>
+    	$(document).ready(function(){
+    		$("#portfolio").on("click","a", function (event) {
+    			//отменяем стандартную обработку нажатия по ссылке
+    			event.preventDefault();
+
+    			//забираем идентификатор бока с атрибута href
+    			var id  = $(this).attr('href'),
+
+    			//узнаем высоту от начала страницы до блока на который ссылается якорь
+    				top = $(id).offset().top;
+    			
+    			//анимируем переход на расстояние - top за 1200 мс
+    			$('body,html').animate({scrollTop: top}, 1500);
+    		});
+    	});
+    </script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
   </body>
 </html>
-
