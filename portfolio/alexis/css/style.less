@@ -126,6 +126,7 @@ body {
 
 
 .focus {
+	margin-bottom: 10%;
 	h2 {
 		font-family: 'Libre Baskerville', serif;
 		font-size: 50px;
@@ -174,6 +175,79 @@ body {
 		.app {
 			margin-top: 140px;
 			border-bottom: 3px solid #feb960;
+		}
+	}
+}
+
+/* porfolio */
+.portfolio {
+	margin-top: 150px;
+	h2 {
+		font-family: 'Libre Baskerville', serif;
+		font-size: 50px;
+		color: #313131;
+	}
+	p {
+		font-size: 15px;
+		color: #616161;
+		margin-bottom: 3%;
+	}
+	.works-row {
+		.work-box {
+			position: relative;
+			margin: 2%;
+			img {
+				width: 100%;
+			}
+			.signature {
+				opacity: 0;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    color: #ffffff;
+			    text-align: center;
+			    display: -webkit-flex;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    -webkit-justify-content: center;
+			    -webkit-align-items: center;
+			    -webkit-transition: opacity 0.3s;
+			    -o-transition: opacity 0.3s;
+			    transition: opacity 0.3s;
+			    &:hover {
+			    	opacity: 1;
+			    }
+			    .sign {
+			    	img {
+			    		width: 61px;
+			    		height: 61px;
+			    	}
+			    	
+			    	p {
+			    		/* position: absolute;
+			    		bottom: 10%; */
+			    	}
+			    	.down-block {
+			    		width: 100%;
+			    		position: absolute;
+			    		left: 0;
+			    		background: #fff;
+			    		bottom: 0;
+			    		p {
+			    			margin-top: 3%;
+			    		}
+			    		.portfolio-line {
+			    		width: 100%;
+			    		height: 3px;
+			    		margin-bottom: 5%;
+			    	}
+			    	}
+
+			    }
+			}
 		}
 	}
 }
