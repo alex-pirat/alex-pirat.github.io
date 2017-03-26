@@ -1,10 +1,11 @@
 body {
 	font-family: 'Poppins', sans-serif;
+	width: 100vw;
 }
 .home {
 	background: url(../img/bg.jpg) no-repeat center center;
 	background-size: cover;
-	width: 100vw;
+	width: 100%;
 	height: 851px;
 	header {
 		.logo {
@@ -100,6 +101,7 @@ body {
 			font-family: 'Libre Baskerville', serif;
 			font-size: 50px;
 			color: #313131;
+		 	font-weight: bold;
 		}
 		position: absolute;
 		top: 60px;
@@ -119,7 +121,7 @@ body {
 		position: absolute;
 		left: 50%;
 		margin-left: -125px;
-		bottom: 94px;
+		bottom: 90px;
 		width: 650px;
 	}
 }
@@ -131,19 +133,36 @@ body {
 		font-family: 'Libre Baskerville', serif;
 		font-size: 50px;
 		color: #313131;
+		font-weight: bold;
 	}
 	p {
 		font-size: 15px;
 		color: #616161;
 	}
 	&-blocks {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
 		display: flex;
-		flex-wrap: wrap;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
 		justify-content: center;
 		text-align: center;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		&-two {
+			
+		}
 		&-block {
-			flex-basis: 263px;
-			margin: 0px 10px;
+
+			flex-basis: 250px;
+			margin: 0 10px;
 			padding-bottom: 60px;
 			img {
 				-webkit-transition: all 0.3s;
@@ -186,6 +205,7 @@ body {
 		font-family: 'Libre Baskerville', serif;
 		font-size: 50px;
 		color: #313131;
+		font-weight: bold;
 	}
 	p {
 		font-size: 15px;
@@ -240,13 +260,134 @@ body {
 			    			margin-top: 3%;
 			    		}
 			    		.portfolio-line {
-			    		width: 100%;
-			    		height: 3px;
-			    		margin-bottom: 5%;
-			    	}
+				    		width: 100%;
+				    		height: 3px;
+				    		margin-bottom: 5%;
+				    	}
 			    	}
 
 			    }
+			}
+		}
+	}
+}
+
+
+/* team */
+
+.team {
+	background: #f7f7f7;
+	margin-top: 10%;
+	h2 {
+		font-family: 'Libre Baskerville', serif;
+		font-size: 50px;
+		color: #313131;
+	 	font-weight: bold;
+	}
+	p {
+		font-size: 15px;
+		color: #616161;
+		margin-bottom: 3%;
+	}
+	img {
+		width: 263px;
+		height: 240px;
+	}
+	&-blocks {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+		justify-content: center;
+		&-two {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&-team {
+			margin: 10px;
+			h3 {
+				font-size: 18px;
+				text-align: center;
+			}
+			p {
+				font-size: 13px;
+				text-align: center;
+				color: #616161;
+			}
+			.text-red {
+				border-bottom: 3px solid #fc5f45;
+				h3 {
+					color: #fc5f45;
+				}
+			}
+			.text-green {
+				border-bottom: 3px solid #38c695;
+				h3 {
+					color: #38c695;
+				}
+			}
+			.text-purpure {
+				border-bottom: 3px solid #b27cf5;
+				h3 {
+					color: #b27cf5;
+				}
+			}
+			.text-jellow {
+				border-bottom: 3px solid #feb960;
+				h3 {
+					color: #feb960;
+				}
+			}
+		}
+	}
+}
+
+
+/* stats */
+
+.stats {
+	margin-top: 15%;
+	margin-bottom: 10%;
+	width: 100%;
+	height: 467px;
+	background: url(../img/bg-stats.jpg) no-repeat center;
+	&-blocks {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+		justify-content: center;
+		&-stat {
+			margin-top: 13%;
+			font-family: 'Poppins', serif;
+			color: #fefefe;
+			h4 {
+				font-size: 20px;
+			}
+			p {
+				color: #bdbdc0;
+				padding: 15px 0;
 			}
 		}
 	}

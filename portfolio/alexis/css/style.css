@@ -1,10 +1,11 @@
 body {
   font-family: 'Poppins', sans-serif;
+  width: 100vw;
 }
 .home {
   background: url(../img/bg.jpg) no-repeat center center;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 851px;
 }
 .home header .logo {
@@ -107,6 +108,7 @@ body {
   font-family: 'Libre Baskerville', serif;
   font-size: 50px;
   color: #313131;
+  font-weight: bold;
 }
 .about-text p {
   font-size: 15px;
@@ -116,7 +118,7 @@ body {
   position: absolute;
   left: 50%;
   margin-left: -125px;
-  bottom: 94px;
+  bottom: 90px;
   width: 650px;
 }
 .focus {
@@ -126,20 +128,33 @@ body {
   font-family: 'Libre Baskerville', serif;
   font-size: 50px;
   color: #313131;
+  font-weight: bold;
 }
 .focus p {
   font-size: 15px;
   color: #616161;
 }
 .focus-blocks {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
-  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
   justify-content: center;
   text-align: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .focus-blocks-block {
-  flex-basis: 263px;
-  margin: 0px 10px;
+  flex-basis: 250px;
+  margin: 0 10px;
   padding-bottom: 60px;
 }
 .focus-blocks-block img {
@@ -180,6 +195,7 @@ body {
   font-family: 'Libre Baskerville', serif;
   font-size: 50px;
   color: #313131;
+  font-weight: bold;
 }
 .portfolio p {
   font-size: 15px;
@@ -237,4 +253,119 @@ body {
   width: 100%;
   height: 3px;
   margin-bottom: 5%;
+}
+/* team */
+.team {
+  background: #f7f7f7;
+  margin-top: 10%;
+}
+.team h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 50px;
+  color: #313131;
+  font-weight: bold;
+}
+.team p {
+  font-size: 15px;
+  color: #616161;
+  margin-bottom: 3%;
+}
+.team img {
+  width: 263px;
+  height: 240px;
+}
+.team-blocks {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+.team-blocks-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team-blocks-team {
+  margin: 10px;
+}
+.team-blocks-team h3 {
+  font-size: 18px;
+  text-align: center;
+}
+.team-blocks-team p {
+  font-size: 13px;
+  text-align: center;
+  color: #616161;
+}
+.team-blocks-team .text-red {
+  border-bottom: 3px solid #fc5f45;
+}
+.team-blocks-team .text-red h3 {
+  color: #fc5f45;
+}
+.team-blocks-team .text-green {
+  border-bottom: 3px solid #38c695;
+}
+.team-blocks-team .text-green h3 {
+  color: #38c695;
+}
+.team-blocks-team .text-purpure {
+  border-bottom: 3px solid #b27cf5;
+}
+.team-blocks-team .text-purpure h3 {
+  color: #b27cf5;
+}
+.team-blocks-team .text-jellow {
+  border-bottom: 3px solid #feb960;
+}
+.team-blocks-team .text-jellow h3 {
+  color: #feb960;
+}
+/* stats */
+.stats {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  width: 100%;
+  height: 467px;
+  background: url(../img/bg-stats.jpg) no-repeat center;
+}
+.stats-blocks {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+.stats-blocks-stat {
+  margin-top: 13%;
+  font-family: 'Poppins', serif;
+  color: #fefefe;
+}
+.stats-blocks-stat h4 {
+  font-size: 20px;
+}
+.stats-blocks-stat p {
+  color: #bdbdc0;
+  padding: 15px 0;
 }
