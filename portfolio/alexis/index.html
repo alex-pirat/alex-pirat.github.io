@@ -7,6 +7,7 @@
     <title>Alexis</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <!--[if lt IE 9]>
@@ -276,40 +277,151 @@
           <h2>Our team.</h2>
           <p>We understand your requirement and provide quality works.</p>
         </div>
-        <div class="row team-blocks">
+        <div class="row team-blocks" role="tablist">
           <div class="team-blocks-two">
-            <div class="team-blocks-team">
-              <img src="img/team/1.jpg" alt="">
-              <div class="text-red">
-                <h3>Michael Schmitt</h3>
-                <p>Founder & CEO</p>
-              </div>
+            <div class="team-blocks-team" role="presentation">
+              <a href="#schmitt" aria-controls="schmitt" role="tab" data-toggle="tab">
+              <img src="img/team/1.png" alt="">
+                <div class="text-red">
+                  <h3>Michael Schmitt</h3>
+                  <p>Founder & CEO</p>
+                </div>
+              </a>
             </div>
-            <div class="team-blocks-team">
-              <img src="img/team/2.jpg" alt="">
-              <div class="text-green">
-                <h3>David Krämer</h3>
-                <p>Lead Developer</p>
-              </div>
+            <div class="team-blocks-team" role="presentation">
+              <a href="#kramer" aria-controls="kramer" role="tab" data-toggle="tab">
+              <img src="img/team/2.png" alt="">
+                <div class="text-green">
+                  <h3>David Krämer</h3>
+                  <p>Lead Developer</p>
+                </div>
+              </a>
             </div>
           </div>
           <div class="team-blocks-two">
-            <div class="team-blocks-team">
-              <img src="img/team/3.jpg" alt="">
-              <div class="text-purpure">
-                <h3>Anna Schröder</h3>
-                <p>Designer</p>
+            <div class="team-blocks-team" role="presentation">
+              <a href="#schroder" aria-controls="schroder" role="tab" data-toggle="tab">
+              <img src="img/team/3.png" alt="">
+                <div class="text-purpure">
+                  <h3>Anna Schröder</h3>
+                  <p>Designer</p>
+                </div>
+              </a>
+            </div>
+            <div class="team-blocks-team" role="presentation">
+              <a href="#teichman" aria-controls="teichman" role="tab" data-toggle="tab">
+              <img src="img/team/4.png" alt="">
+                <div class="text-jellow">
+                  <h3>Alexa Teichmann</h3>
+                  <p>Consultant</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-content">
+          <div class="ab tab-pane active" id="schmitt" role="tabpanel">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="ab-info">
+                  <div class="ab-info-left col-sm-7 col-sm-offset-1">
+                    <h3>About Schmitt.</h3>
+                    <p>Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+                    bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding 
+                    facebook seed round A/B testing mass market. </p>
+                  </div>
+                  <div class="ab-info-right col-sm-4">
+                    <img src="img/points.png" alt="points">
+                    <ul>
+                      <li><i class="fa fa-facebook-square"></i><a href="#">Facebook</a></li>
+                      <li><i class="fa fa-twitter-square"></i><a href="#">Twitter</a></li>
+                      <li><i class="fa fa-linkedin-square"></i><a href="#">LinkedIn</a></li>
+                      <li><i class="fa fa-instagram"></i><a href="#">Instagram</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="team-blocks-team">
-              <img src="img/team/4.jpg" alt="">
-              <div class="text-jellow">
-                <h3>Jason Teichmann</h3>
-                <p>Consultant</p>
+          </div>
+          
+          
+          <div class="ab tab-pane" id="kramer" role="tabpanel">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="ab-info">
+                  <div class="ab-info-left col-sm-7 col-sm-offset-1">
+                    <h3>About Krämer.</h3>
+                    <p>Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+                    bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding 
+                    facebook seed round A/B testing mass market. </p>
+                  </div>
+                  <div class="ab-info-right col-sm-4">
+                    <img src="img/points.png" alt="points">
+                    <ul>
+                      <li><i class="fa fa-facebook-square"></i><a href="#">Facebook</a></li>
+                      <li><i class="fa fa-twitter-square"></i><a href="#">Twitter</a></li>
+                      <li><i class="fa fa-linkedin-square"></i><a href="#">LinkedIn</a></li>
+                      <li><i class="fa fa-instagram"></i><a href="#">Instagram</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="ab tab-pane" id="schroder" role="tabpanel">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="ab-info">
+                  <div class="ab-info-left col-sm-7 col-sm-offset-1">
+                    <h3>About Schröder.</h3>
+                    <p>Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+                    bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding 
+                    facebook seed round A/B testing mass market. </p>
+                  </div>
+                  <div class="ab-info-right col-sm-4">
+                    <img src="img/points.png" alt="points">
+                    <ul>
+                      <li><i class="fa fa-facebook-square"></i><a href="#">Facebook</a></li>
+                      <li><i class="fa fa-twitter-square"></i><a href="#">Twitter</a></li>
+                      <li><i class="fa fa-linkedin-square"></i><a href="#">LinkedIn</a></li>
+                      <li><i class="fa fa-instagram"></i><a href="#">Instagram</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="ab tab-pane" id="teichman" role="tabpanel">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="ab-info">
+                  <div class="ab-info-left col-sm-7 col-sm-offset-1">
+                    <h3>About Teichmann.</h3>
+                    <p>Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+                    bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding 
+                    facebook seed round A/B testing mass market. </p>
+                  </div>
+                  <div class="ab-info-right col-sm-4">
+                    <img src="img/points.png" alt="points">
+                    <ul>
+                      <li><i class="fa fa-facebook-square"></i><a href="#">Facebook</a></li>
+                      <li><i class="fa fa-twitter-square"></i><a href="#">Twitter</a></li>
+                      <li><i class="fa fa-linkedin-square"></i><a href="#">LinkedIn</a></li>
+                      <li><i class="fa fa-instagram"></i><a href="#">Instagram</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 

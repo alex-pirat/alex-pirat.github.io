@@ -1,6 +1,5 @@
 body {
 	font-family: 'Poppins', sans-serif;
-	width: 100vw;
 }
 .home {
 	background: url(../img/bg.jpg) no-repeat center center;
@@ -129,6 +128,7 @@ body {
 
 .focus {
 	margin-bottom: 10%;
+	background: #f7f7f7;
 	h2 {
 		font-family: 'Libre Baskerville', serif;
 		font-size: 50px;
@@ -160,10 +160,16 @@ body {
 			
 		}
 		&-block {
-
 			flex-basis: 250px;
 			margin: 0 10px;
+			padding-top: 60px;
 			padding-bottom: 60px;
+			-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+			box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+			&:hover {
+				-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+				box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+			}
 			img {
 				-webkit-transition: all 0.3s;
 				-o-transition: all 0.3s;
@@ -180,19 +186,19 @@ body {
 			}
 		}
 		.web {
-			margin-top: 140px;
+			margin-top: 80px;
 			border-bottom: 3px solid #fc5f45;
 		}
 		.ux {
-			margin-top: 140px;
+			margin-top: 80px;
 			border-bottom: 3px solid #38c695;
 		}
 		.photo {
-			margin-top: 140px;
+			margin-top: 80px;
 			border-bottom: 3px solid #b27cf5;
 		}
 		.app {
-			margin-top: 140px;
+			margin-top: 80px;
 			border-bottom: 3px solid #feb960;
 		}
 	}
@@ -216,6 +222,15 @@ body {
 		.work-box {
 			position: relative;
 			margin: 2%;
+			-webkit-transition: all .3s;
+			-o-transition: all .3s;
+			transition: all .3s;
+			&:hover {
+				-webkit-transform: scale(1.03);
+				-ms-transform: scale(1.03);
+				-o-transform: scale(1.03);
+				transform: scale(1.03);
+			}
 			img {
 				width: 100%;
 			}
@@ -289,10 +304,6 @@ body {
 		color: #616161;
 		margin-bottom: 3%;
 	}
-	img {
-		width: 263px;
-		height: 240px;
-	}
 	&-blocks {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -316,6 +327,23 @@ body {
 		}
 		&-team {
 			margin: 10px;
+			-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+			box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+			-webkit-transition: all 0.3s;
+			-o-transition: all 0.3s;
+			transition: all 0.3s;
+			&:hover {
+				-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+				box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+				-webkit-transform: scale(1.1);
+				-ms-transform: scale(1.05);
+				-o-transform: scale(1.05);
+				transform: scale(1.05);
+				cursor: pointer;
+			}
+			a {
+				text-decoration: none;
+			}
 			h3 {
 				font-size: 18px;
 				text-align: center;
@@ -349,9 +377,57 @@ body {
 					color: #feb960;
 				}
 			}
+
+		}
+	}
+	.ab {
+		background: url(../img/bg-ab-arrow.png) no-repeat;
+		height: 314px;
+		&-info {
+			margin-top: 7%;
+			&-left {
+				h3 {
+					font-size: 20px;
+				}
+				p {
+					font-size: 15px;
+					color: #616161;
+				}
+			}
+			&-right {
+				img {
+					margin-top: 23%;
+					margin-left: 15%;
+				}
+				ul {
+					float: right;
+					margin-top: 15%;
+					margin-right: 20%;
+					border-left: 1px solid #efefef;
+					li {
+						padding: 5px 0;
+						list-style: none;
+						-webkit-transition: all .3s;
+						-o-transition: all .3s;
+						transition: all .3s;
+						&:hover {
+							-webkit-transform: scale(1.02);
+							-ms-transform: scale(1.02);
+							-o-transform: scale(1.02);
+							transform: scale(1.02);
+						}
+						a {
+							padding-left: 5px;
+							color: #616161;
+							text-decoration: none;
+						}
+					}
+				}
+			}
 		}
 	}
 }
+
 
 
 /* stats */
