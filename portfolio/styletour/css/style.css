@@ -288,11 +288,54 @@ h3 {
 
 
 
-
-
-
-
-
+.sidebar .carousel {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.sidebar-carousel-caption {
+	background: #fff;
+	border-bottom: 1px solid #e1e1e1;
+}
+.sidebar-carousel-caption div {
+	padding: 20px;
+}
+.sidebar-carousel-caption h4 {
+	font-weight: 700;
+	font-size: 14px;
+	margin-top: 0;
+}
+.sidebar-carousel-caption p {
+	margin-bottom: 0;
+	font-size: 12px;
+	color: #5b5b5b;
+}
+#carousel-sidebar img {
+	width: 225px;
+}
+#carousel-sidebar .sidebar-carousel-caption {
+	max-width: 225px;
+}
+#carousel-sidebar .carousel-indicators {
+	max-width: 225px;
+}
+.sidebar .carousel-indicators {
+	background: #fff;
+	position: relative;
+	bottom: 0px;
+	left: 0;
+	width: auto;
+	margin-left: 0;
+	padding: 10px 0;
+}
+.sidebar .carousel-indicators  li.active {
+	background: #5b5b5b;
+}
+.sidebar .carousel-indicators  li {
+	background: #9a9a9a;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+}
 
 
 

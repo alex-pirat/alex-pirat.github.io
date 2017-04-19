@@ -1,0 +1,342 @@
+body h2 {
+  font-size: 36px;
+  font-family: Palatino Linotype;
+  color: #942728;
+}
+body button {
+  text-transform: uppercase;
+  padding: 15px 40px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+body button:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+header {
+  padding-top: 50px;
+  background: url(../img/bg.jpg) center -350px;
+  height: 600px;
+  font-family: 'Roboto', arial, sans-serif;
+}
+header .logo {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+header .phone {
+  float: right;
+}
+header .phone p {
+  font-size: 20px;
+  color: #942728;
+}
+header .main-head {
+  margin-top: 2%;
+  margin-left: 25%;
+  width: 50%;
+  font-family: Palatino Linotype;
+  color: #942728;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+header .main-head h1 {
+  font-size: 48px;
+  padding-top: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .main-head h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+header .main-head p {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  padding-bottom: 50px;
+  color: #e20f00;
+}
+header .buttons {
+  text-align: center;
+}
+header .buttons button:first-child {
+  background: #ec633f;
+  margin-right: 40px;
+}
+header .buttons button:first-child:hover {
+  background: #f9b271;
+}
+header .buttons button:last-child {
+  background: #82c12f;
+}
+header .buttons button:last-child:hover {
+  background: #bddb63;
+}
+/* КТо ведет? */
+.trener {
+  margin-top: 100px;
+}
+.trener-img {
+  text-align: center;
+  margin-top: 20px;
+}
+.trener-img img {
+  width: 350px;
+  height: 350px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.trener-img img:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
+}
+.trener-text {
+  background: rgba(151, 0, 38, 0.4);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 40px;
+  width: 90%;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: 'Roboto', arial;
+}
+.trener-text p {
+  color: #fff;
+}
+.trener-text p b {
+  color: #e20f00;
+}
+.trener-text a {
+  color: #e20f00;
+  font-size: 17px;
+}
+.trener button {
+  margin-top: 50px;
+  background: #ec633f;
+}
+.trener button:hover {
+  background: #f9b271;
+}
+.useful {
+  margin-top: 200px;
+  background: url(../img/roza.jpg) center bottom;
+  padding-bottom: 50px;
+}
+.useful h3 {
+  color: #942728;
+}
+.useful img {
+  margin-top: 30px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  width: 70%;
+  -webkit-box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+.useful img:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.5);
+}
+.useful-block {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+}
+.useful-block:hover .useful-text {
+  background: rgba(0, 0, 0, 0.9);
+}
+.useful-text {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  width: 68%;
+  margin-left: 16%;
+  margin-bottom: 1%;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  padding: 5px 8px;
+}
+.useful-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  /* color: #E20F00; */
+}
+.reviews {
+  /* background: #f0f0f0; */
+  margin-bottom: 150px;
+  margin-top: 50px;
+}
+.reviews .youtube {
+  margin-top: 50px;
+}
+.history {
+  /* background: url(../img/roza.jpg) center; */
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.history h2 {
+  background: rgba(219, 114, 114, 0.3);
+  width: 70%;
+  margin-left: 15%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.history-img {
+  text-align: center;
+  margin-top: 50px;
+}
+.history-img img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.history-text {
+  margin-top: 70px;
+}
+.history-text h3 {
+  color: #942728;
+}
+.history-btn {
+  margin-top: 30px;
+}
+.history-btn button {
+  background: #ec633f;
+}
+.history-btn button:hover {
+  background: #f9b271;
+}
+.blocking {
+  height: 400px;
+  background: url(../img/blocking.jpg) center;
+  background-size: cover;
+}
+.blocking h2 {
+  margin-top: 150px;
+}
+.blocking button {
+  margin-top: 30px;
+  background: #82c12f;
+}
+.blocking button:hover {
+  background: #bddb63;
+}
+.practic {
+  height: 700px;
+  padding-top: 100px;
+  background: url(../img/practic.jpg) no-repeat center 0;
+}
+.practic-text {
+  margin-top: 30px;
+  width: 60%;
+  margin-left: 20%;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+.practic-text ul {
+  padding: 0;
+  margin: 0;
+}
+.practic-text ul li {
+  line-height: 1.5;
+  margin: 5px;
+  list-style-image: url(../img/check.jpg);
+  list-style-position: inside;
+  font-size: 18px;
+}
+#modal-1 .modal-dialog .modal-content {
+  width: 100%;
+}
+#modal-1 .modal-dialog .modal-content .modal-header {
+  border: none;
+  text-align: center;
+}
+#modal-1 .modal-dialog .modal-content .modal-header h4 {
+  color: #942728;
+  font-family: Palatino;
+  font-size: 22px;
+}
+#modal-1 .modal-dialog .modal-content .modal-body p {
+  padding: 20px 40px;
+  color: #942728;
+}
+#modal-1 .modal-dialog .modal-content a {
+  text-decoration: none;
+}
+#modal-1 .modal-dialog .modal-content a:hover p {
+  color: #FF3939;
+}
+#modal-1 .modal-dialog .modal-content .modal-footer {
+  text-align: center;
+  border-top: 1px solid #942728;
+  background: #EC633F;
+  text-decoration: none;
+}
+#modal-1 .modal-dialog .modal-content .modal-footer:hover {
+  background: #EC633F;
+}
+#modal-1 .modal-dialog .modal-content .modal-footer p {
+  font-size: 20px;
+  color: #fff;
+}
