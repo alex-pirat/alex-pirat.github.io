@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'CodeProBlack';
+    src: url('../fonts/Code-Pro-Black.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Code-Pro-Black.eot') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Code-Pro-Black.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Code-Pro-Black.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Code-Pro-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
