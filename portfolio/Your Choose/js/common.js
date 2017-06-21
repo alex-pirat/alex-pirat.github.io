@@ -1,3 +1,10 @@
+window.addEventListener("touchstart", function(event){
+             if(event.target.tagName=="HTML" || event.target.tagName=="BODY"){
+                     event.preventDefault();
+             }
+} ,false);
+
+
 (function($){       
     jQuery.fn.lightTabs = function(options){
         
@@ -6,8 +13,8 @@
             i = 0;
             
             showPage = function(i){
-                $(tabs).children("div").children("div").hide();
-                $(tabs).children("div").children("div").eq(i).show();
+                $(tabs).children("div").children("div").hide(500);
+                $(tabs).children("div").children("div").eq(i).show(1000);
                 $(tabs).children("ul").children("li").removeClass("active");
                 $(tabs).children("ul").children("li").eq(i).addClass("active");
             }
@@ -145,4 +152,45 @@ $(document).ready(function(){
       .focus(function() {
         $('.nice-label7').addClass("focus")
       });
+   $('.nice-textbox8').blur(function() {
+        if($(this).val().length === 0){
+          $('.nice-label8').removeClass("focus");
+        }
+        else { returns; }
+      })
+      .focus(function() {
+        $('.nice-label8').addClass("focus")
+      });
+   $('.nice-textbox9').blur(function() {
+        if($(this).val().length === 0){
+          $('.nice-label9').removeClass("focus");
+        }
+        else { returns; }
+      })
+      .focus(function() {
+        $('.nice-label9').addClass("focus")
+      });
+});
+
+'use strict';
+
+var dots = 4;
+var sliderElem = document.querySelector('.slider');
+var dotElems = sliderElem.querySelectorAll('.slider__dot');
+var indicatorElem = sliderElem.querySelector('.slider__indicator');
+
+Array.prototype.forEach.call(dotElems, function (dotElem) {
+
+    dotElem.addEventListener('click', function (e) {
+
+        var currentPos = parseInt(sliderElem.getAttribute('data-pos'));
+        var newPos = parseInt(dotElem.getAttribute('data-pos'));
+
+        var newDirection = newPos > currentPos ? 'right' : 'left';
+        var currentDirection = newPos < currentPos ? 'right' : 'left';
+
+        indicatorElem.classList.remove('slider__indicator--' + currentDirection);
+        indicatorElem.classList.add('slider__indicator--' + newDirection);
+        sliderElem.setAttribute('data-pos', newPos);
+    });
 });

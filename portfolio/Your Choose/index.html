@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=”viewport” content=”user-scalable=no”>
     <title>Твой выбор</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700" rel="stylesheet">
     <link rel="stylesheet" href="libs/jQueryFormStyler-master/dist/jquery.formstyler.css">
     <link rel="stylesheet" href="libs/jQueryFormStyler-master/dist/jquery.formstyler.theme.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -64,28 +65,30 @@
         </div>
       </div>
       <div id="menu-left">
-        <a class="place" href="#" data-toggle="modal" data-target="#modal-city" class="place"><img src="img/check.png" alt="">Сургут</a>
-        <ul class="menu-left_list">
-          <li><a href="#">О проекте</a></li>
-          <li><a href="#">Программы питания</a></li>
-          <li><a href="#">Калькулятор калорий</a></li>
-          <li><a href="#">Отзывы</a></li>
-        </ul>
-        <a href="#" data-toggle="modal" data-target="#modal-onlain" class="button_green">Заказать</a>
-        <div class="menu-left_time">
-          <p>С 9.00 до 22.00</p>
-          <a href="#" data-toggle="modal" data-target="#modal-phone">
-            <h3>8 (3462) 90-91-92</h3>
-            <span>Заказать звонок</span>
-          </a>
-          <ul>
-            <li>
-              <a class="social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a class="social" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-            </li>
+        <div class="fixed">
+          <a class="place" href="#" data-toggle="modal" data-target="#modal-city" class="place"><img src="img/check.png" alt="">Сургут</a>
+          <ul class="menu-left_list">
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Программы питания</a></li>
+            <li><a href="#">Калькулятор калорий</a></li>
+            <li><a href="#">Отзывы</a></li>
           </ul>
+          <a href="#" data-toggle="modal" data-target="#modal-onlain" class="button_green">Заказать</a>
+          <div class="menu-left_time">
+            <p>С 9.00 до 22.00</p>
+            <a href="#" data-toggle="modal" data-target="#modal-phone">
+              <h3>8 (3462) 90-91-92</h3>
+              <span>Заказать звонок</span>
+            </a>
+            <ul>
+              <li>
+                <a class="social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a class="social" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -233,16 +236,17 @@
           <div class="programms_head">
             <h1>Программы питания</h1>
           </div>
-          <div class="programms_content tabs hidden-xs">
-            <ul class="menu">
-              <li>Снижение Веса</li>
-              <li>Поддержание физической формы</li>
-              <li>Набор массы</li>
-              <li>Для вегетарианцев</li>
-              <li>Другое</li>
+          <div class="programms_content hidden-xs slider tabs" data-pos="0">
+            <ul class="menu slider__dots">
+              <!-- <li class="slider__indicator"></li> -->
+              <li class="slider__dot" data-pos="0"><span></span><h4>Снижение Веса</h4></li>
+              <li class="slider__dot" data-pos="1"><span></span><h4>Поддержание физической формы</h4></li>
+              <li class="slider__dot" data-pos="2"><span></span><h4>Набор массы</h4></li>
+              <li class="slider__dot" data-pos="3"><span></span><h4>Для вегетарианцев</h4></li>
+              <li class="slider__dot" data-pos="4"><span></span><h4>Другое</h4></li>
             </ul>
-            <div class="programms_content_blocks">
-              <div class="block weight">
+            <div class="programms_content_blocks slider__slides">
+              <div class="block weight slider__slide">
                 <div class="block_img">
                   <img src="img/weight.png" alt="">
                 </div>
@@ -277,7 +281,7 @@
                   </div>
                 </div>
               </div>
-              <div class="block support">
+              <div class="block support slider__slide">
                 <div class="block_img">
                   <img src="img/support.png" alt="Поддержание физической формы">
                 </div>
@@ -312,7 +316,7 @@
                   </div>
                 </div>
               </div>
-              <div class="block plus-weight">
+              <div class="block plus-weight slider__slide">
                 <div class="block_img">
                   <img src="img/plus-weight.png" alt="Набор массы">
                 </div>
@@ -347,7 +351,7 @@
                   </div>
                 </div>
               </div>
-              <div class="block for-vegetarian">
+              <div class="block for-vegetarian slider__slide">
                 <div class="block_img">
                   <img src="img/for-vegetarian.png" alt="Для вегетарианцев">
                 </div>
@@ -382,7 +386,7 @@
                   </div>
                 </div>
               </div>
-              <div class="block other">
+              <div class="block other slider__slide">
                 <div class="block_img">
                   <img src="img/other.png" alt="Другое">
                 </div>
@@ -658,9 +662,9 @@
                 </div>
                 <label for="maleorfamele">Пол</label>
                 <div class="maleorfamele">
-                  <input id="male" type="checkbox" placeholder="Мужской">
+                  <input id="male" name="maleorfamele" value="radio1" type="radio" placeholder="Мужской">
                   <label class="male" for="male">Мужской</label>
-                  <input id="female" type="checkbox" placeholder="Женский">
+                  <input id="female" name="maleorfamele" value="radio2" type="radio" placeholder="Женский">
                   <label  class="female" for="female">Женский</label>
                 </div>
                 <ul class="basic">
@@ -682,15 +686,15 @@
                 </div>
                 <div class="goal">
                   <div class="delete-weight">
-                    <input type="checkbox" id="delete-weight" placeholder="Сбросить вес">
+                    <input type="radio" name="goal" id="delete-weight" placeholder="Сбросить вес">
                     <label for="delete-weight">Сбросить вес</label>
                   </div>
                   <div class="plus-weight">
-                    <input type="checkbox" id="plus-weight" placeholder="Набрать массу">
+                    <input type="radio" name="goal" id="plus-weight" placeholder="Набрать массу">
                     <label for="plus-weight">Набрать вес</label>
                   </div>
                   <div class="support-form">
-                    <input type="checkbox" id="support-form" placeholder="Поддерживать форму">
+                    <input type="radio" name="goal" id="support-form" placeholder="Поддерживать форму">
                     <label for="support-form">Поддерживать форму</label>
                   </div>
                 </div>
@@ -699,7 +703,7 @@
                 </div>
                 <div class="activity">
                   <div class="sid">
-                    <input type="checkbox" id="input_sid">
+                    <input type="radio" name="activity" id="input_sid">
                     <label for="input_sid">
                       Сидячий образ жизни
                     </label>
@@ -707,19 +711,19 @@
                   </div>
                   <ul class="activity_list">
                     <li>
-                      <input type="checkbox" id="easy-active">
+                      <input type="radio" name="activity" id="easy-active">
                       <label for="easy-active">Умеренная активность <span>(Легкие упражнения 1-3 раз в неделю)</span></label>
                     </li>
                     <li>
-                      <input type="checkbox" id="hight-active">
+                      <input type="radio" name="activity" id="hight-active">
                       <label for="hight-active">Высокая активность <span>(Активные тренеровки 3-5 раз в неделю)</span></label>
                     </li>
                     <li>
-                      <input type="checkbox" id="very-hight-active">
+                      <input type="radio" name="activity" id="very-hight-active">
                       <label for="very-hight-active">Очень высокая активность <span>(тяжелые тренировки 5-7 раз в неделю)</span></label>
                     </li>
                     <li>
-                      <input type="checkbox" id="extrime-active">
+                      <input type="radio" name="activity" id="extrime-active">
                       <label for="extrime-active">Экстримальная активность<span> (интенсивные тренеровки 2 раза в неделю)</span></label>
                     </li>
                   </ul>
@@ -736,7 +740,8 @@
       <div class="container container_proba">
         <section class="proba">
           <div class="proba_head">
-            <h1>Закажите пробный рацион на весь день<br>с необходимым для Вас количеством<br>калорий всего за 550 рублей в день!</h1>
+            <h1 class="hidden-xs">Закажите пробный рацион на весь день<br>с необходимым для Вас количеством<br>калорий всего за 550 рублей в день!</h1>
+            <h1 class="hidden-sm hidden-lg hidden-md">Закажите пробный рацион на весь день с необходимым для Вас количеством калорий всего за 550 рублей в день!</h1>
             <p>Для заказа позвоните  по телефону  8 (3462) 90-91-92 или оставьте заявку на сайте</p>
           </div>
           <div class="proba_forma">
@@ -767,18 +772,41 @@
           <h1>#твойвыбор</h1>
         </div>
         <div class="reviews_slick">
-          <div class="review">
-            <img src="img/review.png" alt="">
-          </div>
-          <div class="review">
-            <img src="img/review.png" alt="">
-          </div>
-          <div class="review">
-            <img src="img/review.png" alt="">
-          </div>
+          <!-- <div class="reviews_slider">
+            <div class="review">
+              <img src="img/review.png" alt="">
+            </div>
+            <div class="review">
+              <img src="img/review.png" alt="">
+            </div>
+            <div class="review">
+              <img src="img/review.png" alt="">
+            </div>
+          </div> -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner rewiews_slick " role="listbox">
+                <div class="item review active">
+                  <img src="img/review.png" alt="">
+                </div>
+                <div class="item review">
+                  <img src="img/review.png" alt="">
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control arrows arrow_left" href="#carousel-example-generic" role="button" data-slide="prev">
+                <div class=""><img src="img/arrow_left.png" alt="Предыдущий"><span>Предыдущий</span></div>
+              </a>
+              <a class="right carousel-control arrows arrow_right" href="#carousel-example-generic" role="button" data-slide="next">
+                <div class=""><span>Следующий</span><img src="img/arrow_right.png" alt="Следующий"></div>
+              </a>
+            </div>
         </div>
+
       </div>
+      
     </section>
 
     <footer class="footer">
@@ -826,19 +854,19 @@
                 <div class="modal-body">
                    <ul class="citys">
                      <li>
-                       <input type="checkbox" id="surgut">
+                       <input type="radio" name="city" id="surgut">
                        <label for="surgut">Сургут</label>
                      </li>
                      <li>
-                       <input type="checkbox" id="tumen">
+                       <input type="radio" name="city" id="tumen">
                        <label for="tumen">Тюмень</label>
                      </li>
                      <li>
-                       <input type="checkbox" id="lipesk">
+                       <input type="radio" name="city" id="lipesk">
                        <label for="lipesk">Липецк</label>
                      </li>
                      <li>
-                       <input type="checkbox" id="krasnodar">
+                       <input type="radio" name="city" id="krasnodar">
                        <label for="krasnodar">Краснодар</label>
                      </li>
                    </ul>
@@ -856,8 +884,14 @@
                 <div class="modal-body">
                   <h1><span>-</span> Оставьте свои контактные данные, и мы перезвоним вам в ближайшее время:</h1>
                   <form action="#">
-                    <input type="text" required placeholder="Как к вам обращаться?">
-                    <input type="text" required placeholder="Ваш контактный номер">
+                    <div class="name1">
+                      <label class="nice-label8" for="name1">Как к вам обращаться?</label>
+                      <input class="nice-textbox8" type="text" id="name1" required placeholder="">
+                    </div>
+                    <div class="phone1">
+                      <label class="nice-label9" for="phone1">Ваш контактный номер</label>
+                      <input class="nice-textbox9" type="text" id="phone1" required placeholder="">
+                    </div>
                     <button class="button_green">Отправить</button>
                   </form>
                 </div>
@@ -874,8 +908,14 @@
                 <div class="modal-body">
                   <h1><span>-</span> Оставьте свои контактные данные, и мы перезвоним вам в ближайшее время:</h1>
                   <form action="#">
-                    <input type="text" required placeholder="Как к вам обращаться?">
-                    <input type="text" required placeholder="Ваш контактный номер">
+                    <div class="name1">
+                      <label class="nice-label8" for="name1">Как к вам обращаться?</label>
+                      <input class="nice-textbox8" type="text" id="name1" required placeholder="">
+                    </div>
+                    <div class="phone1">
+                      <label class="nice-label9" for="phone1">Ваш контактный номер</label>
+                      <input class="nice-textbox9" type="text" id="phone1" required placeholder="">
+                    </div>
                     <button class="button_green">Отправить</button>
                   </form>
                 </div>
@@ -887,13 +927,19 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title text-center" id="myModalLabel"><img src="img/measuring.png" alt="">Заказ пробного рациона<span id="nameUser"></span></h4>
+                    <h4 class="modal-title text-center" id="myModalLabel"><img src="img/measuring.png" alt="">Консультация диетолога<span id="nameUser"></span></h4>
                 </div>
                 <div class="modal-body">
                   <h1><span>-</span> Оставьте свои контактные данные, и мы перезвоним вам в ближайшее время:</h1>
                   <form action="#">
-                    <input type="text" required placeholder="Как к вам обращаться?">
-                    <input type="text" required placeholder="Ваш контактный номер">
+                    <div class="name1">
+                      <label class="nice-label8" for="name1">Как к вам обращаться?</label>
+                      <input class="nice-textbox8" type="text" id="name1" required placeholder="">
+                    </div>
+                    <div class="phone1">
+                      <label class="nice-label9" for="phone1">Ваш контактный номер</label>
+                      <input class="nice-textbox9" type="text" id="phone1" required placeholder="">
+                    </div>
                     <button class="button_green">Отправить</button>
                   </form>
                 </div>
@@ -933,15 +979,16 @@
                     <div class="left_button hidden-sm hidden-lg hidden-md">
                       <a data-toggle="modal" data-target="#modal-onlain" href="#" class="button_green">Заказать</a>
                     </div>
-                    <div class="left_proba hidden-xs">
-                      <p>Пробный рацион на один день за 550р</p>
-                      <img src="img/icons/done.png" alt="done">
-                    </div>
+                    
                     <div class="left_form hidden-xs">
                       <form action="#">
+                        <div class="left_proba hidden-xs">
+                          <input type="checkbox" id="proba3">
+                          <label for="proba3">Пробный рацион на один за 550 р<span></span></label>
+                        </div>
                         <div class="days_blocks">
                           <div class="oneday days">
-                            <input type="checkbox" id="oneday">
+                            <input type="radio" name="days" id="oneday">
                             <label for="oneday">
                               <h2>1 день</h2>
                               <p>1000р</p>
@@ -951,7 +998,7 @@
                             
                           </div>
                           <div class="fiveday days">
-                            <input type="checkbox" id="fiveday">
+                            <input type="radio" name="days" id="fiveday">
                             <label for="fiveday">
                               <h2>5 дней</h2>
                               <p>4500р</p>
@@ -961,7 +1008,7 @@
                             </label>
                           </div>
                           <div class="sevenday days">
-                            <input type="checkbox" id="sevenday">
+                            <input type="radio" name="days" id="sevenday">
                             <label for="sevenday">
                               <h2>7 дней</h2>
                               <p>6000р</p>
@@ -971,7 +1018,7 @@
                             </label>
                           </div>
                           <div class="thirtyday days">
-                            <input type="checkbox" id="thirtyday">
+                            <input type="radio" name="days" id="thirtyday">
                             <label for="thirtyday">
                               <h2>30 дней</h2>
                               <p>20000р</p>
@@ -983,8 +1030,14 @@
                         </div>
                         <div class="left_form_choose">
                           <h2>Твой выбор <i>-</i> <span>рацион “коррекция фигуры” на 5 дней.</span></h2>
-                          <input type="text" required placeholder="Как к вам обращаться?">
-                          <input type="text" required placeholder="Ваш контактный номер">
+                          <div class="name1">
+                            <label class="nice-label8" for="name1">Как к вам обращаться?</label>
+                            <input class="nice-textbox8" type="text" id="name1" required placeholder="">
+                          </div>
+                          <div class="phone1">
+                            <label class="nice-label9" for="phone1">Ваш контактный номер</label>
+                            <input class="nice-textbox9" type="text" id="phone1" required placeholder="">
+                          </div>
                           <button class="button_green">Отправить</button>
                         </div>
                       </form>
@@ -1111,12 +1164,12 @@
                         <div class="left_form hidden-sm hidden-lg hidden-md">
                           <form action="#">
                             <div class="form_proba3">
-                              <input type="checkbox" id="proba3">
-                              <label for="proba3">Пробный рацион за 550 р<span></span></label>
+                              <input type="checkbox" id="proba4">
+                              <label for="proba4">Пробный рацион за 550 р<span></span></label>
                             </div>
                             <div class="days_blocks">
                               <div class="oneday days">
-                                <input type="checkbox" id="oneday2">
+                                <input type="radio" name="days2" id="oneday2">
                                 <label for="oneday2">
                                   <h2>1 день</h2>
                                   <p>1000р</p>  
@@ -1125,7 +1178,7 @@
                                 <div class="label_img"><img src="img/line_vertical.png" alt=""></div>
                               </div>
                               <div class="fiveday days">
-                                <input type="checkbox" id="fiveday2">
+                                <input type="radio" name="days2" id="fiveday2">
                                 <label for="fiveday2">
                                   <h2>5 дней</h2>
                                   <p>4500р</p>
@@ -1135,7 +1188,7 @@
                                 </label>
                               </div>
                               <div class="sevenday days">
-                                <input type="checkbox" id="sevenday2">
+                                <input type="radio" name="days2" id="sevenday2">
                                 <label for="sevenday2">
                                   <h2>7 дней</h2>
                                   <p>6000р</p>
@@ -1145,7 +1198,7 @@
                                 </label>
                               </div>
                               <div class="thirtyday days">
-                                <input type="checkbox" id="thirtyday2">
+                                <input type="radio" name="days2" id="thirtyday2">
                                 <label for="thirtyday2">
                                   <h2>30 дней</h2>
                                   <p>20000р</p>
@@ -1157,9 +1210,16 @@
                             </div>
                             <div class="left_form_choose">
                               <h2>Твой выбор <i>-</i> <span>рацион “коррекция фигуры” на 5 дней.</span></h2>
-                              <input type="text" required placeholder="Как к вам обращаться?">
-                              <input type="text" required placeholder="Ваш контактный номер">
+                              <div class="name1">
+                                <label class="nice-label8" for="name1">Как к вам обращаться?</label>
+                                <input class="nice-textbox8" type="text" id="name1" required placeholder="">
+                              </div>
+                              <div class="phone1">
+                                <label class="nice-label9" for="phone1">Ваш контактный номер</label>
+                                <input class="nice-textbox9" type="text" id="phone1" required placeholder="">
+                              </div>
                               <button class="button_green">Заказать</button>
+
                             </div>
                           </form>
                         </div>
@@ -1186,11 +1246,15 @@
                         <h1><span>-</span> Для продолжения заказа по телефону, с менеджером, оставьте ваши контактные данные</h1>
                       </div>
                       <form action="#">
-                        <input type="text" required placeholder="Как к вам обращаться?">
-                        <input type="text" required placeholder="Ваш контактный номер">
-                        <div class="text-center">
-                          <button class="button_green">Отправить</button>
+                        <div class="name1">
+                          <label class="nice-label8" for="name1">Как к вам обращаться?</label>
+                          <input class="nice-textbox8" type="text" id="name1" required placeholder="">
                         </div>
+                        <div class="phone1">
+                          <label class="nice-label9" for="phone1">Ваш контактный номер</label>
+                          <input class="nice-textbox9" type="text" id="phone1" required placeholder="">
+                        </div>
+                        <button class="button_green">Отправить</button>
                       </form>
                     </div>
                     <div class="right_bottom">
@@ -1344,7 +1408,7 @@
     <script src="js/common.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script>
-      $('.reviews_slick').slick({
+      $('.reviews_slider').slick({
         infinite: true,
         // appendArrows: $('.arrows'),
         nextArrow: '<div class="arrows arrow_right"><span>Следующий</span><img src="img/arrow_right.png" alt="Следующий"></div>',
@@ -1360,6 +1424,7 @@
         nextArrow: '<img class="arrows arrow_right" src="img/arrow_right_yellow.png" alt="Следующий">',
         prevArrow: '<img class="arrows arrow_left" src="img/arrow_left_yellow.png" alt="Предыдущий">',
         speed: 500,
+        width: 269,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false
