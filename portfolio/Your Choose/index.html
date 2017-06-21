@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Твой выбор</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="libs/jQueryFormStyler-master/dist/jquery.formstyler.css">
     <link rel="stylesheet" href="libs/jQueryFormStyler-master/dist/jquery.formstyler.theme.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +26,7 @@
         <div class="row">
           <div class="col-sm-3 hidden-xs">
             <div class="main_logo">
-              <a href="#"><img src="img/Logo.png" alt="Твой выбор"></a>
+              <a href="#"><img src="img/Logo.svg" alt="Твой выбор"></a>
             </div>
           </div>
           <div class="col-sm-9 col-xs-12">
@@ -40,14 +41,14 @@
                   <h3>8 (3462) 90-91-92</h3>
                   <span class="phone">Заказать звонок</span>
                 </a>
-                <div class="gamburger"></div>
+                <span class="menu-left hidden-sm hidden-lg hidden-md"><img src="img/gumb.png" alt=""></span>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="logo_mob col-xs-12 hidden-sm hidden-md hidden-lg text-center">
-            <img src="img/logo var 2.png" alt="">
+            <img src="img/logo var 2.svg" alt="">
           </div>
         </div>
         <div class="row text-center">
@@ -60,6 +61,31 @@
             <a data-toggle="modal" data-target="#modal-menu"  href="#">Подобрать рацион</a>
             <a href="#" data-toggle="modal" data-target="#modal-onlain">Заказать</a>
           </div>
+        </div>
+      </div>
+      <div id="menu-left">
+        <a class="place" href="#" data-toggle="modal" data-target="#modal-city" class="place"><img src="img/check.png" alt="">Сургут</a>
+        <ul class="menu-left_list">
+          <li><a href="#">О проекте</a></li>
+          <li><a href="#">Программы питания</a></li>
+          <li><a href="#">Калькулятор калорий</a></li>
+          <li><a href="#">Отзывы</a></li>
+        </ul>
+        <a href="#" data-toggle="modal" data-target="#modal-onlain" class="button_green">Заказать</a>
+        <div class="menu-left_time">
+          <p>С 9.00 до 22.00</p>
+          <a href="#" data-toggle="modal" data-target="#modal-phone">
+            <h3>8 (3462) 90-91-92</h3>
+            <span>Заказать звонок</span>
+          </a>
+          <ul>
+            <li>
+              <a class="social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a class="social" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -769,7 +795,7 @@
         </ul>
         <div class="footer_center_img">
           
-          <img src="img/Logo.png" alt="">
+          <img src="img/Logo.svg" alt="">
         </div>
         <div class="button"><a href="#">Заказать</a></div>
         <p>ООО “Твой выбор” ИНН8602275529 ОГРН 1178617002662</p>
@@ -904,11 +930,14 @@
                         <img src="img/icons/bag.png" alt="удобная гермитичная упоковка">
                       </div>Удобная гермитичная упаковка</li>
                     </ul>
-                    <div class="left_proba">
+                    <div class="left_button hidden-sm hidden-lg hidden-md">
+                      <a data-toggle="modal" data-target="#modal-onlain" href="#" class="button_green">Заказать</a>
+                    </div>
+                    <div class="left_proba hidden-xs">
                       <p>Пробный рацион на один день за 550р</p>
                       <img src="img/icons/done.png" alt="done">
                     </div>
-                    <div class="left_form">
+                    <div class="left_form hidden-xs">
                       <form action="#">
                         <div class="days_blocks">
                           <div class="oneday days">
@@ -960,11 +989,18 @@
                         </div>
                       </form>
                     </div>
+                    <div class="text-center">
+                      <div class="left_proba2 hidden-sm hidden-lg hidden-md">
+                        <img src="img/salad_green.png" alt="">
+                        <h2>Хотите сначала попробовать?</h2>
+                        <p>Оставьте заявку прямосейчас и получитерацион на один деньиз любой програмы питания <span>всего за 550 руб</span></p>
+                        <a class="button_green" href="#" data-toggle="modal" data-target="#modal-proba">Хочу попробовать</a>
+                      </div>
+                    </div>
                   </div>
                   <div class="right">
                     <div class="right_head">
                       <h1>Меню</h1>
-
                     </div>
                     <div class="right_slick">
                       <div class="slc">
@@ -1068,12 +1104,68 @@
                         </div>
                         <div class="right_footer">
                           <div class="total">
-                            <h2>1360 Ккал, белки 140г, углеводы 140г, жиры 60г. </h2>
+                            <h2 class="hidden-xs">1360 Ккал, белки 140г, углеводы 140г, жиры 60г. </h2>
+                            <h2 class="hidden-sm hidden-md hidden-lg">1360 Ккал <br> белки 140г, углеводы 140г, жиры 60г. </h2>
                           </div>
                         </div>
+                        <div class="left_form hidden-sm hidden-lg hidden-md">
+                          <form action="#">
+                            <div class="form_proba3">
+                              <input type="checkbox" id="proba3">
+                              <label for="proba3">Пробный рацион за 550 р<span></span></label>
+                            </div>
+                            <div class="days_blocks">
+                              <div class="oneday days">
+                                <input type="checkbox" id="oneday2">
+                                <label for="oneday2">
+                                  <h2>1 день</h2>
+                                  <p>1000р</p>  
+                                  <span class="check"></span>
+                                </label>
+                                <div class="label_img"><img src="img/line_vertical.png" alt=""></div>
+                              </div>
+                              <div class="fiveday days">
+                                <input type="checkbox" id="fiveday2">
+                                <label for="fiveday2">
+                                  <h2>5 дней</h2>
+                                  <p>4500р</p>
+                                  <span class="text">900р/день</span>
+                                  <div class="label_img"><img src="img/line_vertical.png" alt=""></div>
+                                  <span class="check"></span>
+                                </label>
+                              </div>
+                              <div class="sevenday days">
+                                <input type="checkbox" id="sevenday2">
+                                <label for="sevenday2">
+                                  <h2>7 дней</h2>
+                                  <p>6000р</p>
+                                  <span class="text">900р/день</span>
+                                  <div class="label_img"><img src="img/line_vertical.png" alt=""></div>
+                                  <span class="check"></span>
+                                </label>
+                              </div>
+                              <div class="thirtyday days">
+                                <input type="checkbox" id="thirtyday2">
+                                <label for="thirtyday2">
+                                  <h2>30 дней</h2>
+                                  <p>20000р</p>
+                                  <span class="text">900р/день</span>
+                                  <div class="label_img"><img src="img/line_vertical.png" alt=""></div>
+                                  <span class="check"></span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="left_form_choose">
+                              <h2>Твой выбор <i>-</i> <span>рацион “коррекция фигуры” на 5 дней.</span></h2>
+                              <input type="text" required placeholder="Как к вам обращаться?">
+                              <input type="text" required placeholder="Ваш контактный номер">
+                              <button class="button_green">Заказать</button>
+                            </div>
+                          </form>
+                        </div>
                       </div>
-                      <a class="arrows arrow_left">Предыдущий</a>
-                      <a class="arrows arrow_right">Следующий</a>
+                      <a class="arrows arrow_left">Текущая неделя</a>
+                      <a class="arrows arrow_right">Следующая неделя</a>
                     </div>
                   </div>
                 </div>
@@ -1122,16 +1214,16 @@
                       <h2 class="right2_form_head">Заполните контактные данные</h2>
                       <form action="#">
                         <div class="form_name">
-                          <label for="name">Как к вам обращаться:</label>
-                          <input type="text" id="name" required placeholder="">
+                          <label class="nice-label" for="name_right2">Как к вам обращаться<span>:</span></label>
+                          <input class="nice-textbox" type="text" id="name_right2" required placeholder="">
                         </div>
                         <div class="form_phone">
-                          <label for="phone">Контактный номер:</label>
-                          <input type="text" required id="phone" placeholder="">
+                          <label class="nice-label2"  for="phone_right2">Контактный номер<span>:</span></label>
+                          <input class="nice-textbox2" type="text" required id="phone_right2" placeholder="">
                         </div>
                         <div class="form_email">
-                          <label for="email">E-mail:</label>
-                          <input type="text" required id="email" placeholder="">
+                          <label class="nice-label3"  for="email_right2">E-mail<span>:</span></label>
+                          <input class="nice-textbox3" type="text" required id="email_right2" placeholder="">
                         </div>
                         <div class="buttons">
                           <a onClick="show2();" class="button_green">Отправить</a>
@@ -1201,24 +1293,28 @@
                       <form action="#" id="form_right4">
                        <div class="form_inputi">
                           <div class="street form_inputs">
-                           <label for="street">Улица:</label>
-                           <input type="text" id="street">
+                           <label class="nice-label4" for="street">Улица<span>:</span></label>
+                           <input class="nice-textbox4" type="text" id="street">
                          </div>
                          <div class="home form_inputs">
-                           <label for="home">Дом:</label>
-                           <input type="text" id="home">
+                           <label class="nice-label5" for="home">Дом<span>:</span></label>
+                           <input class="nice-textbox5" type="text" id="home">
                          </div>
                          <div class="office form_inputs">
-                           <label for="office">Офис/Квартира:</label>
-                           <input type="text" id="office">
+                           <label class="nice-label6" for="office">Офис/Квартира<span>:</span></label>
+                           <input class="nice-textbox6" type="text" id="office">
                          </div>
                          <div class="porch form_inputs">
-                           <label for="porch">Подъезд:</label>
-                           <input type="text" id="porch">
+                           <label class="nice-label7" for="porch">Подъезд<span>:</span></label>
+                           <input class="nice-textbox7" type="text" id="porch">
                          </div>
-                         <div class="flat form_inputs">
-                           <label for="flat">Офис/Квартира:</label>
-                           <input type="text" id="flat">
+                         <div class="flat form_inputs hidden-xs">
+                           <label class="nice-label7" for="flat">Офис/Квартира<span>:</span></label>
+                           <input class="nice-textbox7" type="text" id="flat">
+                         </div>
+                         <div class="domofon hidden-lg hidden-md hidden-sm">
+                           <input type="checkbox" id="domofon">
+                           <label for="domofon">Домофон не работает<span></span></label>
                          </div>
                        </div>
                         <div class="clearfix"></div>

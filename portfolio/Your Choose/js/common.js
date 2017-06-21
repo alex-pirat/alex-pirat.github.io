@@ -70,3 +70,79 @@ $(function() {
     document.getElementById(show.visible).style.display = 'inline-block';
     document.getElementById(show.hidden).style.display = 'none';
 }
+
+(function(){
+  $('.menu-left').click(function(){
+    $('header').toggleClass('active')
+    $('.intro').toggleClass('active')
+    $('section').toggleClass('active')
+    $('#menu-left').toggleClass('active')
+    $('footer').toggleClass('active')
+  })
+})()
+
+$(document).ready(function(){
+   $('.nice-textbox').blur(function() {
+        if($(this).val().length === 0){
+          $('.nice-label').removeClass("focus");
+        }
+        else { returns; }
+      })
+      .focus(function() {
+        $('.nice-label').addClass("focus")
+      });
+   $('.nice-textbox2').blur(function() {
+        if($(this).val().length === 0){
+          $('.nice-label2').removeClass("focus");
+        }
+        else { returns; }
+      })
+      .focus(function() {
+        $('.nice-label2').addClass("focus")
+      });
+   $('.nice-textbox3').blur(function() {
+        if($(this).val().length === 0){
+          $('.nice-label3').removeClass("focus");
+        }
+        else { returns; }
+      })
+      .focus(function() {
+        $('.nice-label3').addClass("focus")
+      });
+   $('.nice-textbox4').blur(function() {
+        if($(this).val().length === 0){
+          $('.nice-label4').removeClass("focus");
+        }
+        else { returns; }
+      })
+      .focus(function() {
+        $('.nice-label4').addClass("focus")
+      });
+   $('.nice-textbox5').blur(function() {
+        if($(this).val().length === 0){
+          $('.nice-label5').removeClass("focus");
+        }
+        else { returns; }
+      })
+      .focus(function() {
+        $('.nice-label5').addClass("focus")
+      });
+   $('.nice-textbox6').blur(function() {
+        if($(this).val().length === 0){
+          $('.nice-label6').removeClass("focus");
+        }
+        else { returns; }
+      })
+      .focus(function() {
+        $('.nice-label6').addClass("focus")
+      });
+   $('.nice-textbox7').blur(function() {
+        if($(this).val().length === 0){
+          $('.nice-label7').removeClass("focus");
+        }
+        else { returns; }
+      })
+      .focus(function() {
+        $('.nice-label7').addClass("focus")
+      });
+});
