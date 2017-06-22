@@ -754,9 +754,6 @@
                 <label for="phone">Контактный номер:</label>
                 <input required type="text" id="phone">
               </div>
-              <div class="email hidden-sm hidden-lg hidden-md">
-                <label for="">E-mail</label>
-                <input type="text" id="email"></div>
               <div class="text-center proba_btn">
                 <button>Заказать</button>
               </div>
@@ -1431,6 +1428,13 @@
       });
     </script>
     <script src="libs/jQueryFormStyler-master/dist/jquery.formstyler.min.js"></script>
+    <script>
+      (function ($) {
+        $function () {
+          &('select').styler();
+        };
+      }) (jQuery);
+    </script>
   </body>
 </html>
 

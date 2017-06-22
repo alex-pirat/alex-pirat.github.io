@@ -63,6 +63,7 @@ a:active {
   background-size: cover;
   min-height: 1200px;
   padding-top: 150px;
+  margin-top: -80px;
 }
 .main .menu-left {
   position: absolute;
@@ -75,9 +76,9 @@ a:active {
   background: #111;
   overflow: auto;
   width: 200px;
-  height: 100vh;
   padding-top: 40px;
   text-align: center;
+  height: 100%;
   right: -200px;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -118,7 +119,7 @@ a:active {
   display: inline-block;
   padding: 12px 44px;
   font-size: 10px;
-  color: #fff;
+  color: #000;
 }
 .main #menu-left .button_green:hover {
   color: #000;
@@ -326,6 +327,10 @@ a:active {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
+  background-image: -moz-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  background-image: -ms-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
 }
 .main_buttons a:last-child:hover {
   background-image: -moz-linear-gradient(110deg, #97ed8e 0%, #a3ff99 100%);
@@ -334,10 +339,7 @@ a:active {
   box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
 }
 .main_buttons a:last-child:active {
-  background-image: -moz-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  background-image: -ms-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
+  background: none;
 }
 .choose {
   background: #fce01e url(../img/bg-choose.jpg);
@@ -601,7 +603,6 @@ a:active {
   font-family: 'CodeProBlack';
   font-size: 98px;
   color: #80d776;
-  text-shadow: 0px 2px 5px rgba(0, 0, 2, 0.8);
 }
 .programms_content {
   margin-top: 35px;
@@ -773,13 +774,11 @@ a:active {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
+  background: #fce01e;
 }
 .programms_content_blocks .block_correction .button_two a:hover,
-.programms_content_blocks .block_express .button_two a:hover,
-.programms_content_blocks .block_correction .button_two a:active,
-.programms_content_blocks .block_express .button_two a:active {
-  background: #fce01e;
-  color: #000;
+.programms_content_blocks .block_express .button_two a:hover {
+  box-shadow: 5px 2px 21px 3px rgba(0, 0, 2, 0.24);
 }
 .programms_content_blocks .block_correction {
   margin-right: 150px;
@@ -911,6 +910,10 @@ a:active {
   -ms-border-radius: 70px;
   -o-border-radius: 70px;
   border-radius: 70px;
+  background-image: -moz-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  background-image: -ms-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
 }
 .calculator_blocks .block .button a:hover {
   background-image: -moz-linear-gradient(110deg, #97ed8e 0%, #a3ff99 100%);
@@ -919,10 +922,7 @@ a:active {
   box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
 }
 .calculator_blocks .block .button a:active {
-  background-image: -moz-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  background-image: -ms-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
+  background: none;
 }
 .calculator_blocks .block_calc {
   width: 378px;
@@ -987,7 +987,8 @@ a:active {
   margin-right: 5px;
 }
 .calculator_content_form {
-  background: #fff;
+  background: url(../img/calc_form.jpg) top no-repeat;
+  background-size: cover;
   width: 960px;
   display: inline-block;
   -webkit-box-shadow: 8px 3px 20px 1px rgba(0, 0, 2, 0.36);
@@ -1256,7 +1257,10 @@ a:active {
   color: #000;
   font-size: 18px;
   font-family: 'CodeProBlack';
-  background: none;
+  background-image: -moz-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  background-image: -ms-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -1267,11 +1271,13 @@ a:active {
   transition: all .3s;
 }
 .proba_forma button:hover {
-  background: #80d776;
-  background-image: -moz-linear-gradient(110deg, #74c46b 0%, #80d776 100%);
-  background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #80d776 100%);
-  background-image: -ms-linear-gradient(110deg, #74c46b 0%, #80d776 100%);
-  box-shadow: 5px 2px 20px 1.05px rgba(0, 0, 2, 0.24);
+  background-image: -moz-linear-gradient(110deg, #97ed8e 0%, #a3ff99 100%);
+  background-image: -webkit-linear-gradient(110deg, #97ed8e 0%, #a3ff99 100%);
+  background-image: -ms-linear-gradient(110deg, #97ed8e 0%, #a3ff99 100%);
+  box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
+}
+.proba_forma button:active {
+  background: none;
 }
 .proba_forma .proba_btn {
   width: 100%;
@@ -1428,7 +1434,10 @@ a:active {
   color: #000;
   font-size: 18px;
   font-family: 'CodeProBlack';
-  background: none;
+  background-image: -moz-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  background-image: -ms-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -1445,10 +1454,7 @@ a:active {
   box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
 }
 .footer_center .button a:active {
-  background-image: -moz-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  background-image: -ms-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
+  background: none;
 }
 .footer_center p {
   font-size: 18px;
@@ -1679,7 +1685,10 @@ footer.active {
   -o-transition: all .3s;
   transition: all .3s;
   border: 3px solid #80d776;
-  background: none;
+  background-image: -moz-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  background-image: -ms-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+  box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -1693,10 +1702,7 @@ footer.active {
   box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
 }
 .button_green:active {
-  background-image: -moz-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  background-image: -ms-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-  box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
+  background: none;
 }
 #modal-phone .modal-content,
 #modal-proba .modal-content,
@@ -1749,7 +1755,7 @@ footer.active {
   font-family: Ubuntu;
 }
 #modal-menu .modal-body .left_head {
-  padding: 24px 0 40px 84px;
+  padding: 24px 0 40px 54px;
   text-align: center;
 }
 #modal-menu .modal-body .left_head h2 {
@@ -1767,7 +1773,7 @@ footer.active {
 }
 #modal-menu .modal-body .left_desk {
   text-align: left;
-  padding: 0 20px 40px 84px;
+  padding: 0 20px 40px 54px;
 }
 #modal-menu .modal-body .left_desk p {
   font-size: 16px;
@@ -1955,7 +1961,6 @@ footer.active {
   float: right;
   width: 50%;
   background: url(../img/bg-choose.jpg) repeat;
-  height: 100%;
 }
 #modal-menu .modal-body .right_slick {
   position: relative;
@@ -1972,10 +1977,10 @@ footer.active {
   text-decoration: underline;
 }
 #modal-menu .modal-body .right_slick .arrow_left {
-  left: 100px;
+  left: 70px;
 }
 #modal-menu .modal-body .right_slick .arrow_right {
-  right: 100px;
+  right: 70px;
 }
 #modal-menu .modal-body .right_head {
   padding: 63px 0 53px;
@@ -2037,7 +2042,7 @@ footer.active {
   -ms-border-bottom-right-radius: 25px;
   -o-border-bottom-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  height: 171px;
+  height: 179px;
   background: url(../img/bg_green_popup.jpg);
 }
 #modal-menu .modal-body .right_footer .total {
@@ -3128,6 +3133,10 @@ footer.active {
     -o-transform: translateY(90%);
     transform: translateY(90%);
     display: inline-block;
+    background-image: -moz-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+    background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+    background-image: -ms-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
+    box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
   }
   #modal-menu .modal-content .modal-body .left_proba2 .button_green:hover {
     background-image: -moz-linear-gradient(110deg, #97ed8e 0%, #a3ff99 100%);
@@ -3136,10 +3145,7 @@ footer.active {
     box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
   }
   #modal-menu .modal-content .modal-body .left_proba2 .button_green:active {
-    background-image: -moz-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-    background-image: -webkit-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-    background-image: -ms-linear-gradient(110deg, #74c46b 0%, #87e47d 100%);
-    box-shadow: 6px 3px 20px 1.05px rgba(0, 0, 2, 0.15);
+    background: none;
   }
   #modal-menu .modal-content .modal-body .right {
     width: 100%;
@@ -3853,6 +3859,7 @@ footer.active {
 }
 @media only screen and (max-width: 767px) {
   .main {
+    margin-top: 0;
     padding-top: 0;
     background: #fce01e url(../img/bg-800.jpg) no-repeat center;
     background-size: cover;
@@ -4066,7 +4073,9 @@ footer.active {
   .programms_content_blocks .block_head {
     position: absolute;
     text-align: center;
-    top: -75px;
+    width: 100%;
+    top: -74px;
+    left: 0;
   }
   .programms_content_blocks .block_head h1 {
     font-size: 20px;
@@ -4152,6 +4161,8 @@ footer.active {
   }
   .calculator_content_form {
     text-align: center;
+    background: url(../img/calc_form_2.jpg) center -30px no-repeat;
+    background-size: cover;
   }
   .calculator_content_form .head img {
     padding: 18px 0 26px;
@@ -4168,6 +4179,7 @@ footer.active {
   }
   .calculator_content_form .form_head {
     margin: 19px 0;
+    margin-top: 70px;
     padding: 0;
     text-align: center;
   }
@@ -4179,9 +4191,16 @@ footer.active {
     background: url(../img/one_grey.png) left no-repeat;
     height: 44px;
   }
+  .calculator_content_form .form_head-goal {
+    margin: 19px 0;
+    margin-top: 60px;
+  }
   .calculator_content_form .form_head-goal h2 {
     display: inline-block;
     background: url(../img/two_grey.png) 85px no-repeat;
+  }
+  .calculator_content_form .form_head-activity {
+    margin-top: 40px;
   }
   .calculator_content_form .form_head-activity h2 {
     display: inline-block;
@@ -4196,6 +4215,7 @@ footer.active {
     font-size: 12px;
   }
   .calculator_content_form .maleorfamele {
+    margin-top: 10px;
     margin-bottom: 25px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -4237,6 +4257,7 @@ footer.active {
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
     border-radius: 12px;
+    margin-top: 25px;
   }
   .calculator_content_form .goal label {
     width: 30%;
@@ -4250,6 +4271,9 @@ footer.active {
   }
   .calculator_content_form .goal .support-form label {
     width: 40%;
+  }
+  .calculator_content_form .activity {
+    margin-top: 40px;
   }
   .calculator_content_form .activity .sid label {
     padding: 5px 10px;
@@ -4442,6 +4466,12 @@ footer.active {
   }
   .footer_center .button {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .calculator_content_form {
+    background: url(../img/calc_form_2.jpg) top no-repeat;
+    background-size: cover;
   }
 }
 @media only screen and (max-width: 680px) {

@@ -13,7 +13,7 @@ window.addEventListener("touchstart", function(event){
             i = 0;
             
             showPage = function(i){
-                $(tabs).children("div").children("div").hide(500);
+                $(tabs).children("div").children("div").hide(1000);
                 $(tabs).children("div").children("div").eq(i).show(1000);
                 $(tabs).children("ul").children("li").removeClass("active");
                 $(tabs).children("ul").children("li").eq(i).addClass("active");
