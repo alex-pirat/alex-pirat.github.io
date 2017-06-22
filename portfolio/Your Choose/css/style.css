@@ -2100,7 +2100,6 @@ footer.active {
   border-bottom-left-radius: 25px;
   width: 50%;
   background: url(../img/modal_bg_left_foot.png) center top no-repeat;
-  background-size: cover;
   height: 647px;
   float: left;
 }
@@ -2289,7 +2288,7 @@ footer.active {
   padding-top: 0;
 }
 #modal-onlain .right3_form_head {
-  margin-top: 20px;
+  padding-top: 10px;
 }
 #modal-onlain .right3_form_head h1 {
   color: #fff;
@@ -2542,6 +2541,7 @@ footer.active {
   margin-bottom: 20px;
 }
 #modal-onlain .right4 form .button_green {
+  margin-top: -25px;
   -webkit-transform: none;
   -ms-transform: none;
   -o-transform: none;
@@ -2614,7 +2614,7 @@ footer.active {
     font-size: 22px;
   }
   #modal-onlain .right4 form .buttons {
-    margin-top: -10px;
+    margin-top: 10px;
   }
   #modal-onlain .right4 .right3_form_desk p {
     width: 100%;
