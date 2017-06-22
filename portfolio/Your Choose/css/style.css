@@ -817,7 +817,7 @@ a:active {
   background-size: cover;
 }
 .calculator_head {
-  padding: 42px 0;
+  padding: 44px 0;
   margin-top: 120px;
   margin-bottom: 150px;
   text-align: center;
@@ -924,6 +924,12 @@ a:active {
 .calculator_blocks .block .button a:active {
   background: none;
 }
+.calculator_blocks .block:first-child .button {
+  -webkit-transform: translateY(80%);
+  -ms-transform: translateY(80%);
+  -o-transform: translateY(80%);
+  transform: translateY(80%);
+}
 .calculator_blocks .block_calc {
   width: 378px;
 }
@@ -1001,11 +1007,20 @@ a:active {
   border-left: 3px solid #fce01e;
 }
 .calculator_content_form .form_head {
+  position: relative;
   margin: 53px 0 70px;
 }
 .calculator_content_form .form_head h2 {
   font-size: 18px;
   font-style: italic;
+  position: relative;
+  z-index: 9999;
+}
+.calculator_content_form .form_head img {
+  position: absolute;
+  left: 235px;
+  top: -30px;
+  z-index: 0;
 }
 .calculator_content_form input {
   font-size: 16px;
@@ -1096,6 +1111,9 @@ a:active {
 .calculator_content_form .form_head-goal {
   margin: 0 0 80px;
 }
+.calculator_content_form .form_head-goal img {
+  left: 360px;
+}
 .calculator_content_form .goal {
   width: 540px;
   display: inline-block;
@@ -1137,6 +1155,9 @@ a:active {
 }
 .calculator_content_form .form_head-activity {
   margin: 100px 0;
+}
+.calculator_content_form .form_head-activity img {
+  left: 320px;
 }
 .calculator_content_form .activity .sid {
   margin-bottom: 20px;
@@ -1200,7 +1221,6 @@ a:active {
   display: inline-block;
   font-family: 'CodeProBlack';
   font-size: 72px;
-  text-shadow: 31px 13px 54px rgba(0, 0, 2, 0.25);
   color: #fff;
   font-style: italic;
 }
@@ -2313,7 +2333,9 @@ footer.active {
   margin-bottom: 22px;
 }
 #modal-onlain .right3 .form_food select,
-#modal-onlain .right3 .form_time select {
+#modal-onlain .right3 .form_time select,
+#modal-onlain .right3 .form_food .jq-selectbox__select,
+#modal-onlain .right3 .form_time .jq-selectbox__select {
   width: 207px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -2326,12 +2348,14 @@ footer.active {
   text-align: center;
   color: #b9b9b9;
   border: 3px solid #80d776;
-  padding: 13px 12px;
   outline: none;
   cursor: pointer;
+  padding: 0;
 }
 #modal-onlain .right3 .form_food select option,
-#modal-onlain .right3 .form_time select option {
+#modal-onlain .right3 .form_time select option,
+#modal-onlain .right3 .form_food .jq-selectbox__select option,
+#modal-onlain .right3 .form_time .jq-selectbox__select option {
   color: #000;
   cursor: pointer;
   font-size: 15px;
@@ -2339,12 +2363,45 @@ footer.active {
   outline: none;
 }
 #modal-onlain .right3 .form_food select option:hover,
-#modal-onlain .right3 .form_time select option:hover {
+#modal-onlain .right3 .form_time select option:hover,
+#modal-onlain .right3 .form_food .jq-selectbox__select option:hover,
+#modal-onlain .right3 .form_time .jq-selectbox__select option:hover {
   background: #80d776;
+}
+#modal-onlain .right3 .form_food .jq-selectbox__select-text,
+#modal-onlain .right3 .form_time .jq-selectbox__select-text {
+  margin-right: 0;
+  width: 100%!important;
+  padding-right: 0;
+  margin-top: -2px;
+}
+#modal-onlain .right3 .form_food .jq-selectbox__trigger,
+#modal-onlain .right3 .form_time .jq-selectbox__trigger {
+  border: none;
+}
+#modal-onlain .right3 .form_food .jq-selectbox__trigger-arrow,
+#modal-onlain .right3 .form_time .jq-selectbox__trigger-arrow {
+  top: 12px;
+}
+#modal-onlain .right3 .form_food .jq-selectbox li.selected,
+#modal-onlain .right3 .form_time .jq-selectbox li.selected {
+  background: none;
+  color: #80d776;
+}
+#modal-onlain .right3 .form_food .jq-selectbox li:hover,
+#modal-onlain .right3 .form_time .jq-selectbox li:hover {
+  background: none;
+  color: #80d776;
 }
 #modal-onlain .right3 .form_food label,
 #modal-onlain .right3 .form_time label {
   font-size: 15px;
+}
+#modal-onlain .right3 .form_food .jq-selectbox__dropdown,
+#modal-onlain .right3 .form_time .jq-selectbox__dropdown {
+  margin-top: 30px;
+  -webkit-box-shadow: 6.022px 6.688px 34.65px 0.35px rgba(0, 10, 10, 0.25);
+  box-shadow: 6.022px 6.688px 34.65px 0.35px rgba(0, 10, 10, 0.25);
 }
 #modal-onlain .right3 .form_proba input {
   display: none;
@@ -3328,6 +3385,7 @@ footer.active {
     width: 100%;
     font-size: 13px;
     top: 20px;
+    left: 20px;
   }
   #modal-menu .modal-content .modal-body .right .left_form .left_form_choose .name1 input,
   #modal-menu .modal-content .modal-body .right .left_form .left_form_choose .phone1 input {

@@ -236,17 +236,16 @@
           <div class="programms_head">
             <h1>Программы питания</h1>
           </div>
-          <div class="programms_content hidden-xs slider tabs" data-pos="0">
-            <ul class="menu slider__dots">
-              <!-- <li class="slider__indicator"></li> -->
-              <li class="slider__dot" data-pos="0"><span></span><h4>Снижение Веса</h4></li>
-              <li class="slider__dot" data-pos="1"><span></span><h4>Поддержание физической формы</h4></li>
-              <li class="slider__dot" data-pos="2"><span></span><h4>Набор массы</h4></li>
-              <li class="slider__dot" data-pos="3"><span></span><h4>Для вегетарианцев</h4></li>
-              <li class="slider__dot" data-pos="4"><span></span><h4>Другое</h4></li>
+          <div class="programms_content hidden-xs tabs" data-pos="0">
+            <ul class="menu">
+              <li><span></span><h4>Снижение Веса</h4></li>
+              <li><span></span><h4>Поддержание физической формы</h4></li>
+              <li><span></span><h4>Набор массы</h4></li>
+              <li><span></span><h4>Для вегетарианцев</h4></li>
+              <li><span></span><h4>Другое</h4></li>
             </ul>
-            <div class="programms_content_blocks slider__slides">
-              <div class="block weight slider__slide">
+            <div class="programms_content_blocks">
+              <div class="block weight">
                 <div class="block_img">
                   <img src="img/weight.png" alt="">
                 </div>
@@ -281,7 +280,7 @@
                   </div>
                 </div>
               </div>
-              <div class="block support slider__slide">
+              <div class="block support">
                 <div class="block_img">
                   <img src="img/support.png" alt="Поддержание физической формы">
                 </div>
@@ -316,7 +315,7 @@
                   </div>
                 </div>
               </div>
-              <div class="block plus-weight slider__slide">
+              <div class="block plus-weight">
                 <div class="block_img">
                   <img src="img/plus-weight.png" alt="Набор массы">
                 </div>
@@ -351,7 +350,7 @@
                   </div>
                 </div>
               </div>
-              <div class="block for-vegetarian slider__slide">
+              <div class="block for-vegetarian">
                 <div class="block_img">
                   <img src="img/for-vegetarian.png" alt="Для вегетарианцев">
                 </div>
@@ -386,7 +385,7 @@
                   </div>
                 </div>
               </div>
-              <div class="block other slider__slide">
+              <div class="block other">
                 <div class="block_img">
                   <img src="img/other.png" alt="Другое">
                 </div>
@@ -659,6 +658,7 @@
               <form action="#">
                 <div class="form_head">
                   <h2>Укажите ваши индивидуальные параметры:</h2>
+                  <img class="hidden-xs" src="img/Numbers/one-grey.png" alt="">
                 </div>
                 <label for="maleorfamele">Пол</label>
                 <div class="maleorfamele">
@@ -683,6 +683,7 @@
                 </ul>
                 <div class="form_head form_head-goal">
                   <h2>Ваша цель:</h2>
+                  <img class="hidden-xs" src="img/Numbers/two-grey.png" alt="">
                 </div>
                 <div class="goal">
                   <div class="delete-weight">
@@ -700,6 +701,7 @@
                 </div>
                 <div class="form_head form_head-activity">
                   <h2>Уровень активности</h2>
+                  <img class="hidden-xs" src="img/Numbers/three-grey.png" alt="">
                 </div>
                 <div class="activity">
                   <div class="sid">
@@ -1307,8 +1309,8 @@
                       <form action="#" id="form_right2">
                         <div class="form_food">
                           <label for="food">Программа питания</label>
-                          <select form="form_right2" name="food" id="food">
-                            <option value="Выберете программу">Выберете программу</option>
+                          <select data-placeholder="Выберете программу" form="form_right2" name="food" id="food">
+                            <option value=""></option>
                             <option value="Программа 1">Программа 1</option>
                             <option value="Программа 2">Программа 2</option>
                             <option value="Программа 3">Программа 3</option>
@@ -1317,8 +1319,8 @@
                         </div>
                         <div class="form_time">
                           <label for="time">Продолжительность</label>
-                          <select form="form_right2" name="time" id="time">
-                            <option value="Выберете программу">Кол-во дней</option>
+                          <select data-placeholder="Кол-во дней" form="form_right2" name="time" id="time">
+                            <option value=""></option>
                             <option value="1 день">1 день</option>
                             <option value="5 день">5 дней</option>
                             <option value="7 дней">7 дней</option>
@@ -1402,7 +1404,7 @@
       
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/common.js"></script>
+    
     <script src="libs/slick/slick.min.js"></script>
     <script>
       $('.reviews_slider').slick({
@@ -1427,14 +1429,8 @@
         autoplay: false
       });
     </script>
-    <script src="libs/jQueryFormStyler-master/dist/jquery.formstyler.min.js"></script>
-    <script>
-      (function ($) {
-        $function () {
-          &('select').styler();
-        };
-      }) (jQuery);
-    </script>
+    <script src="libs/jQueryFormStyler-master/dist/jquery.formstyler.min.js" defer></script>
+    <script src="js/common.js"></script>
   </body>
 </html>
 

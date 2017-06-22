@@ -893,7 +893,7 @@ a {
 	background: url(../img/bg_calculator.jpg) center no-repeat;
 	background-size: cover;
 	&_head {
-		padding: 42px 0;
+		padding: 44px 0;
 		margin-top: 120px;
 		margin-bottom: 150px;
 		text-align: center;
@@ -997,6 +997,14 @@ a {
 					}
 				}
 			}
+			&:first-child {
+				.button {
+					-webkit-transform: translateY(80%);
+					-ms-transform: translateY(80%);
+					-o-transform: translateY(80%);
+					transform: translateY(80%);
+				}
+			}
 		}
 		.block_calc {
 			width: 378px;
@@ -1073,11 +1081,20 @@ a {
 				border-left: 3px solid @yellow;
 			}
 			.form_head {
+				position: relative;
 				h2 {
 					font-size: 18px;
 					font-style: italic;
+					position: relative;
+					z-index: 9999;
 				}
 				margin: 53px 0 70px;
+				img {
+					position: absolute;
+					left: 235px;
+					top: -30px;
+					z-index: 0;
+				}
 			}
 			input {
 				font-size: 16px;
@@ -1164,6 +1181,9 @@ a {
 			}
 			.form_head-goal {
 				margin: 0 0 80px;
+				img {
+					left: 360px;
+				}
 			}
 			.goal {
 				width: 540px;
@@ -1208,6 +1228,9 @@ a {
 			}
 			.form_head-activity {
 				margin: 100px 0;
+				img {
+					left: 320px;
+				}
 			}
 			.activity {
 				.sid {
@@ -1275,7 +1298,6 @@ a {
 					display: inline-block;
 					.code;
 					font-size: 72px;
-					text-shadow: 31px 13px 54px rgba(0, 0, 2, 0.25);
 					color: #fff;
 					font-style: italic;
 					span {
@@ -2413,7 +2435,7 @@ section.active, header.active, footer.active {
 		}
 		.form_food, .form_time {
 			margin-bottom: 22px;
-			select {
+			select, .jq-selectbox__select {
 				width: 207px;
 				-webkit-border-radius: 25px;
 				-moz-border-radius: 25px;
@@ -2426,9 +2448,9 @@ section.active, header.active, footer.active {
 				text-align: center;
 				color: #b9b9b9;
 				border: 3px solid @green;
-				padding: 13px 12px;
 				outline: none;
 				cursor: pointer;
+				padding: 0;
 				option {
 					color: #000;
 					cursor: pointer;
@@ -2440,8 +2462,35 @@ section.active, header.active, footer.active {
 					}
 				}
 			}
+			.jq-selectbox__select-text {
+				margin-right: 0;
+				width: 100%!important;
+				padding-right: 0;
+				margin-top: -2px;
+			}
+			.jq-selectbox__trigger {
+				border: none;
+			}
+			.jq-selectbox__trigger-arrow {
+				top: 12px;
+			}
+			.jq-selectbox li.selected {
+				background: none;
+				color: @green;
+			}
+			.jq-selectbox li {
+				&:hover {
+					background: none;
+					color: @green;
+				}
+			}
 			label {
 				font-size: 15px;
+			}
+			.jq-selectbox__dropdown {
+				margin-top: 30px;
+				-webkit-box-shadow: 6.022px 6.688px 34.65px 0.35px rgba(0, 10, 10, 0.25);
+				box-shadow: 6.022px 6.688px 34.65px 0.35px rgba(0, 10, 10, 0.25);
 			}
 		}
 		.form_proba {
@@ -3519,6 +3568,7 @@ section.active, header.active, footer.active {
 									width: 100%;
 									font-size: 13px;
 									top: 20px;
+									left: 20px;
 								}
 								input {
 									width: 90%;
