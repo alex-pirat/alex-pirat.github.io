@@ -51,6 +51,90 @@ a {
   clear: both;
 }
 
+@keyframes move {
+	from {
+		-webkit-transform: translateY(-65%);
+		-ms-transform: translateY(-65%);
+		-o-transform: translateY(-65%);
+		transform: translateY(-65%);
+	}
+	50% {
+		-webkit-transform: translateY(-30%);
+		-ms-transform: translateY(-30%);
+		-o-transform: translateY(-30%);
+		transform: translateY(-30%);
+	}
+	to {
+		-webkit-transform: translateY(-65%);
+		-ms-transform: translateY(-65%);
+		-o-transform: translateY(-65%);
+		transform: translateY(-65%);
+	}
+}
+
+@keyframes movetwo {
+	from {
+		-webkit-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+	50% {
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	to {
+		-webkit-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+}
+
+
+@keyframes movefour {
+	from {
+		-webkit-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+	50% {
+		-webkit-transform: translateY(-140%);
+		-ms-transform: translateY(-140%);
+		-o-transform: translateY(-140%);
+		transform: translateY(-140%);
+	}
+	to {
+		-webkit-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+}
+
+@keyframes movethree {
+	from {
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	50% {
+		-webkit-transform: translateY(0%);
+		-ms-transform: translateY(0%);
+		-o-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+	to {
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}
 
 
 
@@ -429,10 +513,14 @@ a {
 		-ms-transform: translateY(-65%);
 		-o-transform: translateY(-65%);
 		transform: translateY(-65%);
+		animation: move 1.5s infinite ease-in-out;
 		img {
+
 			display: inline-block;
 		}
+		
 	}
+
 }
 .balance {
 	padding-top: 80px;
@@ -3621,7 +3709,7 @@ section.active, header.active, footer.active {
 		&_forma {
 			margin-top: 20px;
 			button {
-				margin-top: 20px;
+				margin-top:50px;
 			}
 		}
 	}
@@ -3695,6 +3783,7 @@ section.active, header.active, footer.active {
 			-ms-transform: translateY(-100%);
 			-o-transform: translateY(-100%);
 			transform: translateY(-100%);
+			animation: movetwo 1.5s infinite ease-in-out;
 		}
 		&_head {
 			h1 {
@@ -3980,6 +4069,7 @@ section.active, header.active, footer.active {
 		}
 	}
 	.calculator {
+		
 		&_blocks {
 			.block:not(:nth-child(2)) {
 				margin-right: 155px;
@@ -3999,6 +4089,11 @@ section.active, header.active, footer.active {
 			left: 19%;
 		}
 	}
+	.choose {
+		.scroll {
+			animation: movefour 1.5s infinite ease-in-out;
+		}
+	}
 }
 @media only screen and (max-width: 1080px) {
 	.choose {
@@ -4007,6 +4102,7 @@ section.active, header.active, footer.active {
 			-ms-transform: translateY(-50%);
 			-o-transform: translateY(-50%);
 			transform: translateY(-50%);
+			animation: movethree 1.5s infinite ease-in-out;
 		}
 	}
 	.choose_content {

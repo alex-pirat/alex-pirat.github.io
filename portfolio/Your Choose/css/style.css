@@ -57,6 +57,86 @@ a:active {
 .clearfix:after {
   clear: both;
 }
+@keyframes move {
+  from {
+    -webkit-transform: translateY(-65%);
+    -ms-transform: translateY(-65%);
+    -o-transform: translateY(-65%);
+    transform: translateY(-65%);
+  }
+  50% {
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    -o-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+  to {
+    -webkit-transform: translateY(-65%);
+    -ms-transform: translateY(-65%);
+    -o-transform: translateY(-65%);
+    transform: translateY(-65%);
+  }
+}
+@keyframes movetwo {
+  from {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+@keyframes movefour {
+  from {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  50% {
+    -webkit-transform: translateY(-140%);
+    -ms-transform: translateY(-140%);
+    -o-transform: translateY(-140%);
+    transform: translateY(-140%);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+@keyframes movethree {
+  from {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
 /* --------------------------Basic styles--------------------------------- */
 .main {
   background: #fce01e url(../img/bg.jpg) center no-repeat;
@@ -421,6 +501,7 @@ a:active {
   -ms-transform: translateY(-65%);
   -o-transform: translateY(-65%);
   transform: translateY(-65%);
+  animation: move 1.5s infinite ease-in-out;
 }
 .choose .scroll img {
   display: inline-block;
@@ -3428,7 +3509,7 @@ footer.active {
     margin-top: 20px;
   }
   .proba_forma button {
-    margin-top: 20px;
+    margin-top: 50px;
   }
   .reviews_slick {
     left: 30%;
@@ -3474,6 +3555,7 @@ footer.active {
     -ms-transform: translateY(-100%);
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
+    animation: movetwo 1.5s infinite ease-in-out;
   }
   .choose_head h1 {
     font-size: 165px;
@@ -3679,6 +3761,9 @@ footer.active {
   .reviews_slick {
     left: 19%;
   }
+  .choose .scroll {
+    animation: movefour 1.5s infinite ease-in-out;
+  }
 }
 @media only screen and (max-width: 1080px) {
   .choose .scroll {
@@ -3686,6 +3771,7 @@ footer.active {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+    animation: movethree 1.5s infinite ease-in-out;
   }
   .choose_content {
     background-size: 98%;

@@ -13,6 +13,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/animate.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <!--[if lt IE 9]>
@@ -54,12 +55,12 @@
         </div>
         <div class="row text-center">
           <p class="main_desk hidden-xs">Достигни желаемой физической формы в 2 раза быстрее за счет сбалансированного 5-ти разового питания </p>
-          <h1 class="main_head">Правильное питание<br><span>На каждый день</span></h1>
+          <h1 class="main_head wow fadeIn" data-wow-delay="1s">Правильное питание<br><span>На каждый день</span></h1>
           <p class="main_desk hidden-sm hidden-md hidden-lg">Достигни желаемой физической формы в 2 раза быстрее за счет сбалансированного 5-ти разового питания </p>
           <p class="main_question"><span>-</span> Хотите попробовать?</p>
           <p class="main_skidka">Оставьте заявку прямо сейчас и получите любой рацион на один день <span>всего за 550 руб</span></p>
           <div class="main_buttons">
-            <a data-toggle="modal" data-target="#modal-menu"  href="#">Подобрать рацион</a>
+            <a data-toggle="modal" data-target="#modal-menu"  href="#"">Подобрать рацион</a>
             <a href="#" data-toggle="modal" data-target="#modal-onlain">Заказать</a>
           </div>
         </div>
@@ -94,7 +95,7 @@
     </section>
 
     <section class="choose">
-        <div class="choose_head">
+        <div class="choose_head wow fadeInLeft" data-wow-delay=".3s">
           <h1>#твойвыбор</h1>
         </div>
         <div class="choose_content">
@@ -116,12 +117,12 @@
             <li><span>-</span> Кушаешь в фастфудах, столовых<br>и забегаловках</li>
           </ul>
         </div>
-        <div class="scroll">
-          <a href="#"><img src="img/scroll.png" alt="скролл"></a>
+        <div class="scroll" id="scroll">
+          <a href="#balance"><img src="img/scroll.png" alt="скролл"></a>
         </div>
     </section>
 
-    <section class="balance">
+    <section class="balance" id="balance">
       <div class="container">
         <div class="balance_head hidden-xs">
           <h1>Твой выбор <span>–</span> <span class="this">это сбалансированные рационы для тех, кому некогда готовить</span></h1>
@@ -131,15 +132,15 @@
           <p> <span>–</span>это сбалансированные рационы для тех, кому некогда готовить</span></p>
         </div>
         <div class="balance_content hidden-xs">
-          <div class="balance_content_block">
+          <div class="balance_content_block wow fadeInLeft" data-wow-delay=".3s">
             <h3>Рационы от 900 до 3000 Ккал</h3>
             <p>Независимо от того, какую цель вы ставите перед собой, у нас найдется для вас правильное питание  </p>
           </div>
-          <div class="balance_content_block">
+          <div class="balance_content_block wow fadeIn" data-wow-delay="2s">
             <h3>От 3 до 6 приемов пищи в день</h3>
             <p>Дробное питание – неотъемлимая часть концепции правильного питания</p>
           </div>
-          <div class="balance_content_block">
+          <div class="balance_content_block wow fadeInRight" data-wow-delay="1s">
             <h3>100% натуральные продукты</h3>
             <p>Без жарки, без масла, без сахара, без консервантов. без доавбок. Только качественные и свежие ингридиенты!</p>
           </div>
@@ -218,22 +219,22 @@
             </div>
           </div>
           <div class="food_content">
-            <div class="food_content_block">
+            <div class="food_content_block wow fadeInLeft" data-wow-delay=".3s">
               <h3>Баланс БЖУ</h3>
               <p>Количество белков, жиров и углеводов в наших рацинах сбалансированно по всем правилам правильного питания</p>
             </div>
-            <div class="food_content_block">
+            <div class="food_content_block wow fadeIn" data-wow-delay="2s">
               <h3>Разнообразное питание</h3>
               <p>Наш шеф повар, совместно с диетологамиразработали более 150 блюд, чтобы каждый раз баловать вас новыми кулианрными изысками</p>
             </div>
-            <div class="food_content_block">
+            <div class="food_content_block wow fadeInRight" data-wow-delay="1s">
               <h3>Готовим и доставляем ежедневно</h3>
               <p>Мы доставляем вам еду, которая была приготовлена в день доставки. Каждый день! Поэтому все блюда такие свежие и вкусные</p>
             </div>
           </div>
         </div>
         <section class="programms">
-          <div class="programms_head">
+          <div class="programms_head wow fadeInUp" data-wow-delay="1.3s">
             <h1>Программы питания</h1>
           </div>
           <div class="programms_content hidden-xs tabs" data-pos="0">
@@ -635,16 +636,16 @@
               <img src="img/retro_calculator.png" alt="Калькулятор">
             </div>
             <p>Вы можете самостоятельно расчитать<br>для себя суточную норму<br>потребления калорий<br>с помощью нашего<br>калькулятора</p>
-            <div class="button"><a href="#">Калькулятор</a></div>
+            <div class="button" id="link"><a href="#calculator">Калькулятор</a></div>
           </div>
         </div>
-        <div class="calculator_content">
+        <div class="calculator_content" id="calculator">
           <div class="text-center">
             <div class="calculator_content_head">
               <div class="head_img">
                 <img src="img/retro_calculator.png" alt="Калькулятор">
               </div>
-              <h2>Калькулятор калорий</h2>
+              <h2 class="wow pulse" data-wow-delay=".3s">Калькулятор калорий</h2>
               <p><img src="img/boy.png" alt="Мальчик">( ( 9,99 х Вес ) + ( 6,25 х Рост ) - ( 4,92 х Возраст ) + 5 ) х Коэффициент активности = Мужская суточная норма калорий.</p>
               <p><img src="img/girl.png" alt="Девочка">( ( 9,99 х Вес ) + ( 6,25 х Рост ) - ( 4,92 х Возраст ) - 161 ) х Коэффициент активности = Женская суточная норма калорий.</p>
             </div>
@@ -742,8 +743,8 @@
       <div class="container container_proba">
         <section class="proba">
           <div class="proba_head">
-            <h1 class="hidden-xs">Закажите пробный рацион на весь день<br>с необходимым для Вас количеством<br>калорий всего за 550 рублей в день!</h1>
-            <h1 class="hidden-sm hidden-lg hidden-md">Закажите пробный рацион на весь день с необходимым для Вас количеством калорий всего за 550 рублей в день!</h1>
+            <h1 class="hidden-xs wow zoomIn" data-wow-delay=".3s">Закажите пробный рацион на весь день<br>с необходимым для Вас количеством<br>калорий всего за 550 рублей в день!</h1>
+            <h1 class="hidden-sm hidden-lg hidden-md wow zoomIn" data-wow-delay=".3s">Закажите пробный рацион на весь день с необходимым для Вас количеством калорий всего за 550 рублей в день!</h1>
             <p>Для заказа позвоните  по телефону  8 (3462) 90-91-92 или оставьте заявку на сайте</p>
           </div>
           <div class="proba_forma">
@@ -1404,7 +1405,6 @@
       
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
     <script src="libs/slick/slick.min.js"></script>
     <script>
       $('.reviews_slider').slick({
@@ -1430,6 +1430,10 @@
       });
     </script>
     <script src="libs/jQueryFormStyler-master/dist/jquery.formstyler.min.js" defer></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="js/common.js"></script>
   </body>
 </html>

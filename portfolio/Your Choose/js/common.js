@@ -175,3 +175,50 @@ $(document).ready(function(){
 jQuery(document).ready(function() {
   jQuery('#form_right2 select').styler();
 })
+
+
+
+$(document).ready(function(){
+  $("#link, #scroll").on("click","a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+    
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
+
+
+// проверяем поддержку position: fixed;[start]
+var isFixedSupported = (function(){
+  var isSupported = null;
+  if (document.createElement) {
+    var el = document.createElement("div");
+    if (el && el.style) {
+      el.style.position = "fixed";
+      el.style.top = "10px";
+      var root = document.body;
+      if (root && root.appendChild && root.removeChild) {
+        root.appendChild(el);
+        isSupported = el.offsetTop === 10;
+        root.removeChild(el);
+      }
+    }
+  }
+  return isSupported;
+})();
+
+// добавляем контекст для "старичков"
+window.onload = function(){
+  if (!isFixedSupported){
+    document.body.className += ' no-fixed-supported' : '';
+  }
+// первичный scroll
+  window.scrollBy(0, 1);
+}
