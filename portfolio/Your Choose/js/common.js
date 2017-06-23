@@ -214,11 +214,3 @@ var isFixedSupported = (function(){
   return isSupported;
 })();
 
-// добавляем контекст для "старичков"
-window.onload = function(){
-  if (!isFixedSupported){
-    document.body.className += ' no-fixed-supported' : '';
-  }
-// первичный scroll
-  window.scrollBy(0, 1);
-}
