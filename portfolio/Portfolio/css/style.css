@@ -2,8 +2,11 @@
 .dited {
   font-family: 'Dited';
 }
-.stamp {
-  font-family: 'stampbor_grunge_russianRg';
+.camprus {
+  font-family: 'a_CampusGrav';
+}
+.opengost {
+  font-family: 'OpenGost Type A TT';
 }
 * {
   margin: 0;
@@ -92,6 +95,7 @@ a:active {
 .main_menu_opened {
   display: none;
   position: absolute;
+  z-index: 9;
   left: 0;
   width: 614px;
   height: 932px;
@@ -141,7 +145,6 @@ a:active {
   height: 73px;
 }
 .main_head {
-  text-transform: uppercase;
   text-align: center;
   margin-top: 258px;
   color: #fff;
@@ -149,12 +152,14 @@ a:active {
 }
 .main_head h2 {
   font-size: 55px;
-  font-family: 'stampbor_grunge_russianRg';
+  font-family: 'OpenGost Type A TT';
 }
 .main_head h1 {
   font-size: 125px;
-  font-family: 'Dited';
+  text-transform: uppercase;
+  font-family: 'a_CampusGrav';
   margin-top: 67px;
+  letter-spacing: 4px;
 }
 .main_button {
   text-align: center;
@@ -173,7 +178,6 @@ a:active {
 }
 .hi_head h2 {
   font-size: 45px;
-  font-family: 'stampbor_grunge_russianRg';
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 35px;

@@ -9,12 +9,23 @@
 	font-style: normal;
 }
 @font-face {
-    font-family: 'stampbor_grunge_russianRg';
-    src: url('../fonts/stampbor_grunge_russian-webfont.eot');
-    src: url('../fonts/stampbor_grunge_russian-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/stampbor_grunge_russian-webfont.woff2') format('woff2'),
-         url('../fonts/stampbor_grunge_russian-webfont.woff') format('woff'),
-         url('../fonts/stampbor_grunge_russian-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'a_CampusGrav';
+	src: url('../fonts/ACampusGrav.eot');
+	src: url('../fonts/ACampusGrav.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ACampusGrav.woff2') format('woff2'),
+		url('../fonts/ACampusGrav.woff') format('woff'),
+		url('../fonts/ACampusGrav.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenGost Type A TT';
+	src: url('../fonts/OpenGostTypeATT-Regular.eot');
+	src: url('../fonts/OpenGostTypeATT-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenGostTypeATT-Regular.woff2') format('woff2'),
+		url('../fonts/OpenGostTypeATT-Regular.woff') format('woff'),
+		url('../fonts/OpenGostTypeATT-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
