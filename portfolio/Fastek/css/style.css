@@ -79,17 +79,17 @@ a:active {
   margin-top: 19px;
 }
 .up_contact ul {
-  margin-left: 22px;
+  margin-left: 25px;
   margin-top: 7px;
 }
 .up_contact ul li {
   float: left;
   color: #343434;
   font-size: 14px;
-  margin-right: 12px;
+  margin-right: 10px;
 }
 .up_contact ul li a {
-  color: #000;
+  color: #343434;
   font-weight: bold;
 }
 .up_contact ul li:last-child {
@@ -321,24 +321,24 @@ a:active {
   width: 40%;
   height: 65px;
   padding-left: 120px;
-  background: url(../img/list_1.png) 80px 10px no-repeat;
+  background: url(../img/list_1.png) 80px 8px no-repeat;
 }
 .list_host ul li:nth-child(2) {
   width: 30%;
   height: 65px;
   padding-left: 45px;
-  background: url(../img/list_2.png) 5px 10px no-repeat;
+  background: url(../img/list_2.png) 5px 8px no-repeat;
 }
 .list_host ul li:nth-child(3) {
   width: 30%;
   padding-left: 40px;
-  background: url(../img/list_3.png) 0 10px no-repeat;
+  background: url(../img/list_3.png) 0 8px no-repeat;
   height: 65px;
 }
 .list_host ul li:nth-child(4) {
   width: 35%;
   padding-left: 85px;
-  background: url(../img/list_4.png) 45px 10px no-repeat;
+  background: url(../img/list_4.png) 42px 8px no-repeat;
   height: 65px;
 }
 .list_host ul li:nth-child(5) {
@@ -346,13 +346,13 @@ a:active {
   padding-left: 70px;
   padding-top: 20px;
   height: 65px;
-  background: url(../img/list_5.png) 25px 10px no-repeat;
+  background: url(../img/list_5.png) 19px 8px no-repeat;
 }
 .list_host ul li:nth-child(6) {
   width: 35%;
   height: 65px;
   padding-left: 55px;
-  background: url(../img/list_6.png) 15px 10px no-repeat;
+  background: url(../img/list_6.png) 15px 8px no-repeat;
 }
 .list_host ul li a {
   font-size: 21px;
@@ -395,6 +395,7 @@ a:active {
 }
 .base_text_2 {
   margin-top: 26px;
+  padding-left: 10px;
 }
 .base_text_2 p {
   line-height: 25px;
@@ -406,19 +407,24 @@ a:active {
   font-size: 18px;
   color: #5a5a5a;
 }
+.base .pic1 {
+  padding-left: 10px;
+}
 .base .pic2 {
   padding-left: 150px;
   margin-top: 26px;
 }
 .big-img {
   margin-top: 60px;
+  margin-bottom: 30px;
 }
 .video {
-  background: url(../img/bg_video.jpg) center no-repeat;
+  background: url(../img/bg_video.jpg) center top no-repeat;
   height: 727px;
 }
 .video_head {
-  margin-top: 25px;
+  margin-bottom: 8px;
+  margin-top: 19px;
   text-align: center;
 }
 .video_head h2 {
@@ -446,7 +452,7 @@ a:active {
 }
 .video_nav {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .video_nav_slide {
   outline: none;
@@ -473,8 +479,8 @@ a:active {
   margin-top: 8px;
 }
 .three_blocks {
-  margin-top: 30px;
-  margin-bottom: 405px;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 .three_blocks_content {
   display: -moz-flex;
@@ -570,10 +576,10 @@ a:active {
 .footer {
   background: url(../img/FooterFeather.png) center no-repeat;
   background-size: cover;
-  height: 317px;
+  height: 300px;
 }
 .footer_logo {
-  margin-top: 65px;
+  margin-top: 57px;
 }
 .footer_logo ul {
   margin-left: 20px;
@@ -585,7 +591,7 @@ a:active {
   margin-right: 0;
 }
 .footer_logo_contact {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 .footer_logo_contact li {
   margin-right: 25px;
@@ -596,7 +602,7 @@ a:active {
   transform: translateY(-15%);
 }
 .footer_logo_social {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 .footer_logo_social li {
   margin-right: 31px;
@@ -604,7 +610,7 @@ a:active {
 .footer_center ul li {
   font-size: 10px;
   color: #343434;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .footer_center ul li:last-child {
   margin-bottom: 0;
@@ -635,7 +641,7 @@ a:active {
   font-size: 18px;
   color: #343434;
   margin-top: 30px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 .footer_right_top ul li {
   font-size: 10px;
@@ -648,20 +654,20 @@ a:active {
   margin-right: 50px;
 }
 .footer_right_top_doc li {
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   width: 100px;
 }
 .footer_right_top_comp {
   margin-right: 30px;
 }
 .footer_right_top_comp li {
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 .footer_right_top_comp li:last-child {
   margin-bottom: 0;
 }
 .footer_right_top_contact li {
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 .footer_right_top_contact li:last-child {
   margin-bottom: 0;
@@ -680,8 +686,8 @@ a:active {
 /* ---------------------------------Products--------------------------------- */
 .product {
   background: url(../img/bg_pr-fasad.png) top no-repeat;
-  margin-top: -33px;
-  padding-top: 58px;
+  margin-top: -34px;
+  padding-top: 27px;
 }
 .product_blocks {
   display: -moz-flex;
@@ -791,7 +797,7 @@ a:active {
   margin-bottom: 5px;
 }
 .product_skills_blocks {
-  margin-bottom: 300px;
+  margin-bottom: 50px;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -815,7 +821,7 @@ a:active {
   vertical-align: middle;
 }
 .product_skills_blocks .block p {
-  margin-left: 70px;
+  margin-left: 80px;
   padding-top: 20px;
   font-size: 16px;
   text-align: left;
@@ -829,13 +835,13 @@ a:active {
   background: url(../img/skill_2.png) center no-repeat;
 }
 .product_skills_blocks .block_2 p {
-  padding-top: 10px;
+  padding-top: 13px;
 }
 .product_skills_blocks .block_3 {
   background: url(../img/skill_3.png) center no-repeat;
 }
 .product_skills_blocks .block_3 p {
-  padding-top: 30px;
+  padding-top: 35px;
 }
 .product_skills_blocks .block_4 {
   background: url(../img/skill_4.png) center no-repeat;
@@ -847,13 +853,13 @@ a:active {
   background: url(../img/skill_5.png) center no-repeat;
 }
 .product_skills_blocks .block_5 p {
-  padding-top: 50px;
+  padding-top: 45px;
 }
 .product_skills_blocks .block_6 {
   background: url(../img/skill_6.png) center no-repeat;
 }
 .product_skills_blocks .block_6 p {
-  padding-top: 40px;
+  padding-top: 35px;
 }
 .product_skills_blocks .block_7 {
   background: url(../img/skill_7.png) center no-repeat;
@@ -877,7 +883,7 @@ a:active {
   background: url(../img/skill_10.png) center no-repeat;
 }
 .product_skills_blocks .block_10 p {
-  padding-top: 40px;
+  padding-top: 35px;
   margin-left: 260px;
 }
 /* ------------------------------Products-fasad------------------------------ */
@@ -1082,6 +1088,9 @@ a:active {
   border-bottom: 1px solid #7092a5;
   width: 224px;
 }
+.pr-grunt_content {
+  margin-bottom: 50px;
+}
 .pr-grunt_content_head h2 {
   font-size: 24px;
   color: #5a5a5a;
@@ -1203,6 +1212,9 @@ a:active {
   background: url(../img/btn_decor.jpg) center left no-repeat;
   padding: 16px 0 16px 11px;
 }
+.pr-decor_content {
+  margin-bottom: 50px;
+}
 .pr-decor_content_header {
   margin-top: 10px;
 }
@@ -1272,9 +1284,6 @@ a:active {
   font-weight: bold;
   color: #5a5a5a;
   text-decoration: underline;
-}
-.empty-333 {
-  height: 333px;
 }
 /* -----------------------------Contact------------------------- */
 .slider-contact_img_bg {
@@ -1610,14 +1619,20 @@ a:active {
   .base_text_1 {
     padding-left: 5px;
   }
+  .base_text_2 {
+    padding-left: 15px;
+  }
   .base_text p {
     width: 100%;
-    padding: 0 10px;
+    padding: 0;
     font-size: 12px;
     line-height: 20px;
   }
   .base_img img {
     width: 100%;
+  }
+  .base .pic1 {
+    padding-left: 15px;
   }
   .base .pic2 {
     padding-left: 5px;
@@ -1681,7 +1696,9 @@ a:active {
     background-size: 100%;
   }
   .product_skills_blocks .block p {
-    font-size: 11px;
+    font-size: 12px;
+    margin-left: 51px;
+    width: 166px;
   }
   .product_skills_blocks .block_1 p {
     padding-top: 34px;
@@ -1690,7 +1707,7 @@ a:active {
     padding-top: 28px;
   }
   .product_skills_blocks .block_9 p {
-    padding-top: 34px;
+    padding-top: 20px;
   }
   .product_skills_blocks .block_10 p {
     margin-left: 189px;
@@ -1812,11 +1829,29 @@ a:active {
     padding-left: 55px;
     background: url(../img/list_6.png) 5px 10px no-repeat;
   }
+  .base_text_1 {
+    padding-left: 0;
+  }
+  .base_text_2 {
+    padding-left: 0;
+  }
+  .base .pic1 {
+    padding-left: 0;
+  }
+  .base .pic2 {
+    padding-left: 0;
+  }
+  .video {
+    height: 700px;
+  }
   .video_head h2 {
     font-size: 25px;
   }
   .video_for_slide h3 {
     font-size: 15px;
+  }
+  .three_blocks {
+    margin-top: 20px;
   }
   .three_blocks_content .block {
     margin: 0;
@@ -1831,7 +1866,7 @@ a:active {
     margin: 0 20px;
   }
   .footer {
-    height: 700px;
+    height: 550px;
   }
   .footer_logo {
     margin-top: 33px;
@@ -2005,6 +2040,11 @@ a:active {
     background-position: -200px center;
   }
 }
+@media only screen and (max-width: 570px) {
+  .footer {
+    height: 600px;
+  }
+}
 @media only screen and (max-width: 560px) {
   .pr-accordion_list .list_head {
     background-position: -300px center;
@@ -2035,7 +2075,7 @@ a:active {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
   .footer_logo_logotip {
     width: 100%;
   }
