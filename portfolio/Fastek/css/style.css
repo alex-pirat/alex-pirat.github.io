@@ -56,7 +56,7 @@ a:active {
 }
 .up_menu ul li {
   float: left;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
   margin-right: 18px;
   font-weight: bold;
@@ -355,10 +355,10 @@ a:active {
   background: url(../img/list_6.png) 15px 8px no-repeat;
 }
 .list_host ul li a {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
   color: #5a5a5a;
-  line-height: 21px;
+  line-height: 18px;
 }
 .list_host ul .active a {
   color: #9b258b;
@@ -591,7 +591,7 @@ a:active {
   margin-right: 0;
 }
 .footer_logo_contact {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .footer_logo_contact li {
   margin-right: 25px;
@@ -602,7 +602,7 @@ a:active {
   transform: translateY(-15%);
 }
 .footer_logo_social {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .footer_logo_social li {
   margin-right: 31px;
@@ -610,7 +610,7 @@ a:active {
 .footer_center ul li {
   font-size: 10px;
   color: #343434;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .footer_center ul li:last-child {
   margin-bottom: 0;
