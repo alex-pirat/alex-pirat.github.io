@@ -821,9 +821,9 @@ a:active {
   vertical-align: middle;
 }
 .product_skills_blocks .block p {
-  margin-left: 80px;
+  margin-left: 55px;
   padding-top: 20px;
-  font-size: 16px;
+  font-size: 15px;
   text-align: left;
   width: 230px;
   display: inline-block;
@@ -877,7 +877,7 @@ a:active {
   background: url(../img/skill_9.png) center no-repeat;
 }
 .product_skills_blocks .block_9 p {
-  padding-top: 5px;
+  padding-top: 15px;
 }
 .product_skills_blocks .block_10 {
   background: url(../img/skill_10.png) center no-repeat;
