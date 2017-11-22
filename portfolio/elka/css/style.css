@@ -1119,6 +1119,9 @@ a:active {
   .best_content_blocks .block h4 {
     font-size: 20px;
   }
+  .footer .button {
+    margin-right: 0;
+  }
   .footer p {
     margin-right: 0;
   }
