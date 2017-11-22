@@ -13,3 +13,13 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
+
+$(function() {
+  $('.toggle-menu button').click(function() {
+    $(this).siblings(".toggle-menu button").toggle();
+    $(this).toggleClass('active');
+  });
+});
+$(".toggle-menu").click(function(){   
+  $(this).next(".toggle-nav").toggle();
+});
