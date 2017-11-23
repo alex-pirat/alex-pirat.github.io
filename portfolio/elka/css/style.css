@@ -43,6 +43,10 @@ a:active {
   clear: both;
 }
 /* --------------------------Basic styles--------------------------------- */
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+}
 .wrap {
   background: url(../img/bg.jpg) center no-repeat;
   height: 1021px;
