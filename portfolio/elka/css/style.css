@@ -984,6 +984,103 @@ a:active {
 .wrap-pr-st .wrap_contact_medium {
   color: #6c6c6c;
 }
+.wrap-pr-sauna {
+  background: url(../img/bg_product-sauna.jpg) top right no-repeat;
+}
+.wrap-pr-sauna .wrap_contact_medium {
+  color: #6c6c6c;
+}
+.wrap-pr-sauna .wrap-product_text h2 {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.sauna-sl-1,
+.sauna-dveri {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.sauna-sl-1_container,
+.sauna-dveri_container {
+  display: inline-block;
+  width: 960px;
+}
+.sauna-sl-1_wrap,
+.sauna-dveri_wrap {
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.sauna-sl-1 .block,
+.sauna-dveri .block {
+  width: 300px;
+  height: 100%;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  text-align: center;
+}
+.sauna-sl-1 .block img,
+.sauna-dveri .block img {
+  -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+.sauna-sl-1 .slick-arrow,
+.sauna-dveri .slick-arrow {
+  position: absolute;
+  top: 75px;
+  cursor: pointer;
+}
+.sauna-sl-1 .arrow-prev,
+.sauna-dveri .arrow-prev {
+  left: -70px;
+}
+.sauna-sl-1 .arrow-next,
+.sauna-dveri .arrow-next {
+  right: -50px;
+}
+.sauna-dveri .sauna-sl-4_wrap .block {
+  height: 300px;
+}
+.sauna-dveri .sauna-sl-4_wrap .block img {
+  height: 300px;
+}
+.sauna-sl-2 {
+  background: url(../img/bg_product-product.png) top center #f7f7f7 no-repeat;
+  margin-top: 50px;
+  padding-top: 187px;
+}
+.sauna-sl-2 h2 {
+  font-family: 'roboto';
+  font-size: 19px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.sauna-sl-2 .block_button {
+  margin-bottom: 80px;
+}
+.sauna-dveri .block_button {
+  margin-bottom: 150px;
+}
+.sauna-dveri .slick-arrow {
+  top: 35%;
+}
 .table {
   background: url(../img/bg_product-product.png) top center #f7f7f7 no-repeat;
   margin-top: 50px;
@@ -1219,7 +1316,7 @@ a:active {
   padding-left: 70px;
 }
 .table-st .table-j_wrap .table-j_head .table-j_col {
-  width: 75%;
+  width: 584px;
   margin-top: 3px;
 }
 .table-st .table-j_wrap .table-j_row .table-j_col {
@@ -1411,6 +1508,36 @@ a:active {
   .map {
     background: url(../img/map.jpg) -300px center no-repeat;
   }
+  .sauna-sl-1_container {
+    width: 630px;
+  }
+  .sauna-sl-1_wrap {
+    height: 138px;
+  }
+  .sauna-sl-1_wrap .block {
+    height: 100%;
+  }
+  .sauna-sl-1 .slick-arrow {
+    top: 47px;
+  }
+  .sauna-sl-1 .slick-arrow img {
+    width: 30px;
+  }
+  .sauna-sl-1 .arrow-prev {
+    left: -45px;
+  }
+  .sauna-sl-1 .arrow-next {
+    right: -25px;
+  }
+  .sauna-dveri .slick-arrow {
+    top: 40%;
+  }
+  .sauna-dveri .sauna-sl-4_wrap .block {
+    height: 220px;
+  }
+  .sauna-dveri .sauna-sl-4_wrap .block img {
+    height: 100%;
+  }
 }
 @media only screen and (max-width: 992px) {
   .wrap_logo img {
@@ -1483,7 +1610,8 @@ a:active {
     font-size: 23px;
   }
   .wrap-product_text p,
-  .wrap-product_text ul {
+  .wrap-product_text ul,
+  .wrap-product_text h2 {
     width: 100%;
     padding: 0 20px;
   }
@@ -1524,6 +1652,9 @@ a:active {
     font-size: 18px;
     padding-top: 20px;
   }
+  .table-st .table-j_wrap .table-j_head .table-j_col {
+    width: 584px;
+  }
   .map {
     background: url(../img/map.jpg) -500px center no-repeat;
   }
@@ -1543,6 +1674,9 @@ a:active {
   }
   .table-j .table-j_wrap .table-j_head img {
     left: 30px;
+  }
+  .table-st .table-j_wrap .table-j_head .table-j_col {
+    width: 552px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -1732,6 +1866,37 @@ a:active {
   .wrap-pr-st {
     background-position: 80% 0;
   }
+  .sauna-sl-1_container {
+    width: 80%;
+  }
+  .sauna-sl-1_wrap {
+    height: 100%;
+  }
+  .sauna-sl-1_wrap .block {
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .sauna-sl-1 .slick-arrow {
+    top: 35%;
+  }
+  .sauna-sl-1 .slick-arrow img {
+    width: 30px;
+  }
+  .sauna-sl-1 .arrow-prev {
+    left: -10%;
+  }
+  .sauna-sl-1 .arrow-next {
+    right: -5%;
+  }
+  .sauna-dveri .slick-arrow {
+    top: 40%;
+  }
+  .sauna-dveri .sauna-sl-4_wrap .block {
+    height: 339px;
+  }
+  .sauna-dveri .sauna-sl-4_wrap .block img {
+    height: 100%;
+  }
 }
 @media only screen and (max-width: 718px) {
   .friends_content .block:nth-child(2) {
@@ -1739,6 +1904,9 @@ a:active {
   }
   .friends_content .block:nth-child(3) {
     margin-right: 20px;
+  }
+  .table-st .table-j_wrap .table-j_head .table-j_col {
+    width: 362px;
   }
 }
 @media only screen and (max-width: 644px) {
@@ -1851,6 +2019,19 @@ a:active {
   }
   .wrap-pr-imit {
     background-position: -1100px 0px;
+  }
+  .sauna-dveri .slick-arrow {
+    top: 40%;
+  }
+  .sauna-dveri .sauna-sl-4_wrap .block {
+    height: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+  .sauna-dveri .sauna-sl-4_wrap .block img {
+    display: inline-block;
+    height: 100%;
+    width: 70%;
   }
 }
 @media only screen and (max-width: 520px) {
@@ -1969,6 +2150,12 @@ a:active {
     margin-top: 0px;
     width: 269px;
   }
+  .table-st .table-j_wrap .table-j_row .table-j_col {
+    width: 90px;
+  }
+  .table-st .table-j_wrap .table-j_row .table-j_col:last-child {
+    width: 90px;
+  }
   .pogonaj_razmer_blocks .blocks {
     width: 430px;
   }
@@ -2023,6 +2210,35 @@ a:active {
   }
   .map {
     background: url(../img/map.jpg) -800px center no-repeat;
+  }
+  .sauna-sl-1 h2 {
+    text-align: center;
+  }
+  .sauna-sl-1_container {
+    width: 70%;
+  }
+  .sauna-sl-1_wrap .block {
+    margin-right: 10px;
+  }
+  .sauna-sl-1 .slick-arrow {
+    top: 35%;
+  }
+  .sauna-sl-1 .slick-arrow img {
+    width: 30px;
+  }
+  .sauna-sl-1 .arrow-prev {
+    left: -15%;
+  }
+  .sauna-sl-1 .arrow-next {
+    right: -10%;
+  }
+  .sauna-dveri .sauna-sl-4_wrap .slick-arrow {
+    top: 40%;
+  }
+  .sauna-dveri .sauna-sl-4_wrap .block img {
+    display: inline-block;
+    height: 100%;
+    width: 85%;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -2131,6 +2347,12 @@ a:active {
   }
   .table-st .table-j_wrap .table-j_head .table-j_col {
     width: 209px;
+  }
+  .table-st .table-j_wrap .table-j_row .table-j_col {
+    width: 70px;
+  }
+  .table-st .table-j_wrap .table-j_row .table-j_col:last-child {
+    width: 70px;
   }
   .table-mebel .table-j_wrap .table-j_head h3 {
     font-size: 10px;

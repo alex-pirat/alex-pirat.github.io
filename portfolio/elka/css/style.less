@@ -1065,6 +1065,111 @@ a {
 		color: #6c6c6c;
 	}
 }
+
+.wrap-pr-sauna {
+	background: url(../img/bg_product-sauna.jpg) top right no-repeat;
+	.wrap_contact_medium {
+		color: #6c6c6c;
+	}
+	.wrap-product_text {
+		h2 {
+			margin-bottom: 0;
+			font-size: 30px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+
+}
+
+.sauna-sl-1, .sauna-dveri {
+	text-align: center;
+	width: 100%;
+	margin-top: 40px;
+
+	&_container {
+		display: inline-block;
+		width: 960px;
+
+	}
+	&_wrap {
+		position: relative;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+		justify-content: center;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.block {
+		width: 300px;
+		height: 100%;
+		margin-bottom: 10px;
+		margin-right: 20px;
+		text-align: center;
+		img {
+			-webkit-box-shadow: 6px 6px 10px 0px rgba(0,0,0,.25);
+			box-shadow: 6px 6px 10px 0px rgba(0,0,0,.25);
+			width: 100%;
+		}
+		
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 75px;
+		cursor: pointer;
+	}
+	.arrow-prev {
+		left: -70px;
+	}
+	.arrow-next {
+		right: -50px;
+	}
+}
+
+.sauna-dveri {
+	.sauna-sl-4_wrap {
+		.block {
+			height: 300px;	
+			img {
+				height: 300px;
+			}
+		}
+	}
+}
+.sauna-sl-2 {
+	background: url(../img/bg_product-product.png) top center #f7f7f7 no-repeat;
+	margin-top: 50px;
+	padding-top: 187px;
+	h2 {
+		font-family: 'roboto';
+		font-size: 19px;
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: 30px;	
+	}
+	.block_button {
+		margin-bottom: 80px;	
+	}
+}
+.sauna-dveri {
+	.block_button {
+		margin-bottom: 150px;	
+	}
+	.slick-arrow {
+		top: 35%;	
+	}
+}
+
 .table {
 	background: url(../img/bg_product-product.png) top center #f7f7f7 no-repeat;
 	margin-top: 50px;
@@ -1324,7 +1429,7 @@ a {
 				padding-left: 70px;
 			}
 			.table-j_col {
-				width: 75%;
+				width: 584px;
 				margin-top:3px;
 			}
 		}
@@ -1536,6 +1641,42 @@ a {
 	.map {
 		background: url(../img/map.jpg) -300px center no-repeat;
 	}
+	.sauna-sl-1 {
+		&_container {
+			width: 630px;
+		}
+		&_wrap {
+			height: 138px;
+			.block {
+				height: 100%;
+			}
+		}
+		.slick-arrow {
+			top: 47px;
+			img {
+				width: 30px;
+			}
+		}
+		.arrow-prev {
+			left: -45px;
+		}
+		.arrow-next {
+			right: -25px;
+		}
+	}
+	.sauna-dveri {
+		.slick-arrow {
+			top: 40%;	
+		}
+		.sauna-sl-4_wrap {
+			.block {
+				height: 220px;	
+				img {
+					height: 100%;	
+				}
+			}
+		}
+	}
 }
 @media only screen and (max-width: 992px) {
 	.wrap {
@@ -1645,7 +1786,7 @@ a {
 	}
 	.wrap-product {
 		&_text {
-			p, ul {
+			p, ul,h2 {
 				width: 100%;
 				padding: 0 20px;
 			}
@@ -1705,6 +1846,15 @@ a {
 			}
 		}
 	}
+	.table-st {
+		.table-j_wrap {
+			.table-j_head {
+				.table-j_col {
+					width: 584px;
+				}
+			}
+		}
+	}
 	.map {
 		background: url(../img/map.jpg) -500px center no-repeat;
 	}
@@ -1716,6 +1866,7 @@ a {
 			}
 		}
 	}
+
 }
 @media only screen and (max-width: 950px) {
 	.friends {
@@ -1736,6 +1887,9 @@ a {
 				}
 			}
 		}
+	}
+	.table-st .table-j_wrap .table-j_head .table-j_col {
+		width: 552px;
 	}
 }
 @media only screen and (max-width: 900px) {
@@ -2017,6 +2171,43 @@ a {
 	.wrap-pr-st {
 		background-position:80% 0;
 	}
+	.sauna-sl-1 {
+		&_container {
+			width: 80%;
+		}
+		&_wrap {
+			height: 100%;
+			.block {
+				height: 100%;
+				margin-bottom: 10px;
+			}
+		}
+		.slick-arrow {
+			top: 35%;
+			img {
+				width: 30px;
+			}
+		}
+		.arrow-prev {
+			left: -10%;
+		}
+		.arrow-next {
+			right: -5%;
+		}
+	}
+	.sauna-dveri {
+		.slick-arrow {
+			top: 40%;	
+		}
+		.sauna-sl-4_wrap {
+			.block {
+				height: 339px;	
+				img {
+					height: 100%;	
+				}
+			}
+		}
+	}
 }
 @media only screen and (max-width: 718px)  {
 	.friends {
@@ -2030,7 +2221,16 @@ a {
 				}
 			}
 		}
-	}	
+	}
+	.table-st {
+		.table-j_wrap {
+			.table-j_head {
+				.table-j_col {
+					width: 362px;
+				}
+			}
+		}
+	}
 }
 @media only screen and (max-width: 644px) {
 	.footer {
@@ -2192,6 +2392,23 @@ a {
 	.wrap-pr-imit {
 		background-position: -1100px 0px;
 	}
+	.sauna-dveri {
+		.slick-arrow {
+			top: 40%;	
+		}
+		.sauna-sl-4_wrap {
+			.block {
+				height: 100%;	
+				text-align: center;
+				margin-right: 0;
+				img {
+					display: inline-block;
+					height: 100%;	
+					width: 70%;	
+				}
+			}
+		}
+	}
 }
 @media only screen and (max-width: 520px) {
 	.best {
@@ -2345,6 +2562,14 @@ a {
 					width: 269px;
 				}
 			}
+			.table-j_row {
+				.table-j_col {
+					width: 90px;
+					&:last-child {
+						width: 90px;
+					}
+				}
+			}
 		}
 	}
 	.pogonaj_razmer {
@@ -2437,6 +2662,46 @@ a {
 	}
 	.map {
 		background: url(../img/map.jpg) -800px center no-repeat;
+	}
+	.sauna-sl-1{
+		h2 {
+			text-align: center;
+				
+		}
+		&_container {
+			width: 70%;
+		}
+		&_wrap {
+			.block {
+				margin-right: 10px;
+			}
+		}
+		.slick-arrow {
+			top: 35%;
+			img {
+				width: 30px;
+			}
+		}
+		.arrow-prev {
+			left: -15%;
+		}
+		.arrow-next {
+			right: -10%;
+		}
+	}
+	.sauna-dveri {
+		.sauna-sl-4_wrap {
+			.slick-arrow {
+				top: 40%;	
+			}
+			.block {
+				img {
+					display: inline-block;
+					height: 100%;	
+					width: 85%;	
+				}
+			}
+		}
 	}
 }
 @media only screen and (max-width: 420px) {
@@ -2590,6 +2855,14 @@ a {
 			.table-j_head {
 				.table-j_col {
 					width: 209px;
+				}
+			}
+			.table-j_row {
+				.table-j_col {
+					width: 70px;
+					&:last-child {
+						width: 70px;
+					}
 				}
 			}
 		}
