@@ -876,13 +876,14 @@ a:active {
   -o-border-radius: 15px;
   border-radius: 15px;
 }
-.toggle-nav ul li:hover a {
+.toggle-nav ul li:hover a,
+.toggle-nav ul li:active a {
   color: #eee;
 }
 .toggle-nav ul li a {
   outline: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #375525;
   padding-left: 10px;
   font-size: 17px;
   font-weight: bold;
