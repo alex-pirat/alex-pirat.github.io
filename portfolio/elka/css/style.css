@@ -745,6 +745,7 @@ a:active {
   position: absolute;
   left: 20px;
   top: 120px;
+  z-index: 10;
   /* активное состояние, т.е. меню открыто */
 }
 .toggle-menu .cmn-toggle-switch {
@@ -837,12 +838,14 @@ a:active {
 }
 .toggle-nav {
   position: absolute;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 99;
+  background-color: #E8D69F;
+  z-index: 9;
   top: 120px;
-  left: 90px;
+  left: 0px;
   display: none;
-  width: 60%;
+  width: 96%;
+  margin-right: 2%;
+  margin-left: 2%;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
@@ -859,9 +862,9 @@ a:active {
 }
 .toggle-nav ul li {
   position: relative;
-  z-index: 99;
+  text-align: center;
   float: left;
-  width: 96%;
+  width: 100%;
   padding: 5px;
   margin: 2%;
   -webkit-transition: all .3s;
@@ -873,8 +876,8 @@ a:active {
   -o-border-radius: 15px;
   border-radius: 15px;
 }
-.toggle-nav ul li:hover {
-  background: #000;
+.toggle-nav ul li:hover a {
+  color: #eee;
 }
 .toggle-nav ul li a {
   outline: none;
@@ -2264,11 +2267,11 @@ a:active {
     width: 90%;
   }
   .toggle-menu {
-    z-index: 9;
-    top: 105px;
+    z-index: 10;
+    top: 96px;
   }
   .toggle-nav {
-    top: 105px;
+    top: 96px;
   }
   .best_content_blocks .block h3 {
     font-size: 22px;

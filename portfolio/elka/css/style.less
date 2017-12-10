@@ -811,6 +811,7 @@ a {
 	position: absolute;
 	left: 20px;
 	top: 120px;
+	z-index: 10;
 	.cmn-toggle-switch {
 		display: block;
 		position: relative;
@@ -915,12 +916,14 @@ a {
 }
 .toggle-nav {
 	position: absolute;
-	background: rgba(0,0,0, 0.7);
-	z-index: 99;
+	background-color: #E8D69F;
+	z-index: 9;
 	top: 120px;
-	left: 90px;
+	left: 0px;
 	display: none;
-	width: 60%;
+	width: 96%;
+	margin-right: 2%;	
+	margin-left: 2%;	
 	-webkit-transition: all .3s;
 	-o-transition: all .3s;
 	transition: all .3s;
@@ -935,9 +938,9 @@ a {
 		padding: 0;
 		li {
 			position: relative;
-			z-index: 99;
+			text-align: center;
 			float: left;
-			width: 96%;
+			width: 100%;
 			padding: 5px;
 			margin: 2%;
 			-webkit-transition: all .3s;
@@ -949,7 +952,9 @@ a {
 			-o-border-radius: 15px;
 			border-radius: 15px;
 			&:hover {
-				background: #000;
+				a {
+					color: #eee;
+				}
 			}
 			a {
 				outline: none;
@@ -2735,11 +2740,11 @@ a {
 		}
 	}
 	.toggle-menu {
-		z-index: 9;
-		top: 105px;
+		z-index: 10;
+		top: 96px;
 	}
 	.toggle-nav {
-		top: 105px;
+		top: 96px;
 	}
 	.best {
 		&_content {
