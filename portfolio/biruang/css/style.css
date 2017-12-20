@@ -522,6 +522,24 @@ footer .ftr {
 		}
 }
 @media screen and (max-width: 600px) {
+	.header-bottom {
+		width: 100%;
+	}
+	.header-bottom .menu {
+		text-align: center;
+		float: none;
+		width: 100%;
+		padding: 0 10px;
+	}
+	.header-bottom .menu li {
+		display: inline-block;
+		margin-right: 10px;
+		
+		
+	}
+	.header-bottom .menu li a {
+		font-size: 12px;
+	}
 	.block3-main article {
 	width: 95%;
 	float: none;
@@ -566,7 +584,7 @@ footer .ftr {
 	margin: 0 2.5% 30px 2.5%;
 	}
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
 	.header-top {
 		padding: 10px 0;
 	}
@@ -578,6 +596,22 @@ footer .ftr {
 	float: none;
 	display: table;
 	margin: 0 auto;
+	}
+	.contact-basket p {
+		margin-left: 0;
+		text-align: center;
+		
+		margin-top:10px;
+		width: 100%;
+		float: none;
+		
+	}
+	.contact-basket p.header-basket {
+		width: 100%;
+		display: block;
+		margin-left: -12%;
+		margin-top: 10px;
+		
 	}
 }
 @media screen and (max-width: 360px) {
@@ -599,5 +633,12 @@ footer .ftr {
 	}
 	.my-slider ul li p {
 	top: 70px;
+	}
+	.header-bottom .menu li {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	.header-bottom .menu li a {
+		font-size: 10px;
 	}
 }

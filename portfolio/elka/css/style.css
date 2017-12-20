@@ -423,20 +423,23 @@ a:active {
   margin-right: 20px;
 }
 .products_blocks a .hover {
-  display: none;
+  display: block;
+  opacity: 0;
   position: absolute;
-  width: 212px;
-  height: 212px;
-  left: 4px;
-  top: 4px;
+  width: 213px;
+  height: 213px;
+  left: 3px;
+  top: 3px;
   border: 2px solid #000;
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s;
+  z-index: 0;
 }
 .products_blocks a .block {
   width: 220px;
   height: 220px;
+  z-index: 9;
   text-align: center;
   position: relative;
   margin-right: 100px;
@@ -446,16 +449,14 @@ a:active {
   -o-transition: all .3s;
   transition: all .3s;
 }
-.products_blocks a .block:hover {
+.products_blocks a:hover .block {
   -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
-  -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  transform: scale(1.03);
+  z-index: 0;
 }
-.products_blocks a .block:hover .hover {
-  display: block;
+.products_blocks a:hover .hover {
+  opacity: 1;
+  z-index: 10;
 }
 .products_blocks a h5 {
   color: #000;
@@ -509,8 +510,8 @@ a:active {
   height: 416px;
   text-align: center;
   position: relative;
-  -webkit-box-shadow: 0 0 20px 1px #000;
-  box-shadow: 0 0 20px 1px #000;
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s;
@@ -520,14 +521,14 @@ a:active {
   -ms-transform: scale(1.03);
   -o-transform: scale(1.03);
   transform: scale(1.03);
-  -webkit-box-shadow: 0 0 25px 1px #000;
-  box-shadow: 0 0 25px 1px #000;
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
 }
 .friends_content .block h3 {
   font-family: "Roboto Slab";
   font-weight: bold;
   font-size: 20px;
-  margin-top: 13px;
+  padding-top: 18px;
   margin-bottom: 7px;
 }
 .friends_content .block p {
@@ -544,7 +545,7 @@ a:active {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   color: #000;
 }
 .friends_content .block a img {
@@ -705,6 +706,9 @@ a:active {
   outline: none;
   margin-top: 63px;
   margin-right: 23px;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
 }
 .footer p {
   font-family: 'Roboto Slab';
@@ -1029,6 +1033,25 @@ a:active {
 .wrap-pr-fasad .wrap-product_text {
   padding-bottom: 300px;
 }
+.wrap-o-nas {
+  background: none;
+}
+.wrap-o-nas .wrap_menu {
+  background: #fdfdfd;
+}
+.wrap-o-nas .row {
+  padding-bottom: 25px;
+}
+.wrap-o-nas .wrap-product_text {
+  background: url(../img/bg_o-nas.jpg) center no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  padding-top: 114px;
+  padding-bottom: 114px;
+}
+.wrap-o-nas .wrap-product_text p {
+  font-weight: normal;
+}
 .razmer-bk {
   text-align: center;
   font-family: 'roboto';
@@ -1044,6 +1067,7 @@ a:active {
 .razmer-bk p {
   font-size: 30px;
   line-height: 1;
+  margin-bottom: 0;
 }
 .wrap-pr-kraski {
   background: url(../img/bg_product-kraski.jpg) top center no-repeat;
@@ -1055,6 +1079,9 @@ a:active {
   font-weight: bold;
   font-size: 30px;
   text-transform: uppercase;
+}
+.wrap-pr-kraski .wrap-product_text ul li {
+  font-weight: 300;
 }
 .wrap-pr-el {
   background: url(../img/bg_product-el.jpg) top center no-repeat;
@@ -1255,7 +1282,7 @@ a:active {
   position: absolute;
 }
 .table-brd .table_wrap .table_head .table_col {
-  width: 148px;
+  width: 149px;
   float: left;
 }
 .table-brd .table_wrap .table_head .table_col:last-child {
@@ -1512,8 +1539,14 @@ a:active {
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s;
-  -webkit-box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.7);
-  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.block_button a:hover,
+.block_button a:active {
+  -webkit-box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.5);
+  background: #f2f0f0;
 }
 .block_button-kraski {
   padding-bottom: 130px;
@@ -2162,6 +2195,9 @@ a:active {
     display: inline-block;
     width: 96%;
   }
+  .wrap-o-nas .row {
+    padding-bottom: 100px;
+  }
 }
 @media only screen and (max-width: 718px) {
   .friends_content .block:nth-child(2) {
@@ -2696,6 +2732,9 @@ a:active {
   }
   .razmer-euro .block-img img {
     width: 96%;
+  }
+  .wrap-o-nas .row {
+    padding-bottom: 30px;
   }
 }
 @media only screen and (max-width: 360px) {

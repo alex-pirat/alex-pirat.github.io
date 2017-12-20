@@ -15,7 +15,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#menu_top").on("click","a", function (event) {
+    $("#menu_top_container").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
 

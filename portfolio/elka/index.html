@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ёлкин Двор</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,10 +26,10 @@
           </div>
           <div class="col-xs-3 col-sm-6 wrap_menu">
             <ul class="menu_top">
-              <li class="one"><a href="#">о нас<span></span></a></li>
-              <li class="two"><a href="#products">продукция<span></span></a></li>
-              <li class="three"><a class="active" href="#">отделка<span></span></a></li>
-              <li class="four"><a href="#contact">контакты<span></span></a></li>
+              <li class="one"><a href="o-nas.html">о нас<span></span></a></li>
+              <span id="menu_top_container"><li class="two"><a href="#products">продукция<span></span></a></li>
+                <li class="three"><a class="active" href="#friends">отделка<span></span></a></li>
+                <li class="four"><a href="#contact">контакты<span></span></a></li></span>
             </ul>
           </div>
           <div id="menu">
@@ -39,7 +40,7 @@
             </div>
             <div class="toggle-nav" id="toggle-nav">
                 <ul>
-                  <li><a href="#">о нас</a></li>
+                  <li><a href="o-nas.html">о нас</a></li>
                   <li><a href="#products">продукция</a></li>
                   <li><a class="active" href="#">отделка</a></li>
                   <li><a href="#contact">контакты</a></li>
@@ -55,7 +56,7 @@
                 elkin-dvor@mail.ru
               </span>
               <div class="button">
-                <a href="#">Заказать звонок</a>
+                <a href="#" data-toggle="modal" data-target="#myModal">Заказать звонок</a>
               </div>
             </div>
           </div>
@@ -65,17 +66,17 @@
               <span>в Старом Осколе и Белгородской области</span>
           </h1>
         </div>
-        <div class="wrap_form">
+        <div class="wrap_form" action="mail.php" method="post">
           <div class="row">
             <div class="col-sm-offset-2 col-sm-8 col-xs-12">
-              <form action="#">
+              <form action="mail.php" method="POST">
                 <h3>Оставьте заявку</h3>
-                <h4>и воспользуйтесь выгодным предложением</h4>
+                <h4>и мы перезвоним Вам в ближайшее время!</h4>
                   <div class="wrap_form_input">
-                    <input type="text" placeholder="*ваше имя">
+                    <input name="user_name" type="text" placeholder="*ваше имя">
                   </div>
                   <div class="wrap_form_input">
-                    <input type="text" placeholder="*номер телефона">
+                    <input name="user_phone" type="text" placeholder="*номер телефона">
                   </div>
                   <div class="wrap_form_button">
                     <button>оставить заявку</button>
@@ -120,106 +121,121 @@
           <a class="one" href="eurovagonka.html">
             <div class="block">
               <h5>Евровагонка</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
           <a class="two" href="block_haus.html">
             <div class="block">
               <h5>Блок-хаус</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
           <a class="three" href="imitacia.html">
             <div class="block">
               <h5>Имитация бруса</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
         </div>
         <div class="products_blocks">
           <a class="one" href="brus-kleeniy.html">
             <div class="block">
               <h5>Брус клееный</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
           <a class="two" href="doska-pola.html">
             <div class="block">
               <h5>Доска пола</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
           <a class="three" href="brus-reika-doska.html">
             <div class="block">
               <h5>Брус, рейка, доска</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
         </div>
         <div class="products_blocks">
           <a class="one" href="podoconnic.html">
             <div class="block">
               <h5>Подоконники</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
           <a class="two" href="mebel.html">
             <div class="block">
               <h5>Мебельный щит</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
           <a class="three" href="stol.html">
             <div class="block">
               <h5>Столешницы</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
         </div>
         <div class="products_blocks">
           <a class="one" href="jalusi.html">
             <div class="block">
               <h5>Дверцы Жалюзи</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
           <a class="two" href="elementi_lestnis.html">
             <div class="block">
               <h5>Элементы лестниц</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
           <a class="three" href="pogonaj.html">
             <div class="block">
               <h5>Погонажные<br>Изделия</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
         </div>
         <div class="products_blocks">
           <a class="one" href="fasad.html">
             <div class="block">
               <h5>Фасады</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
           <a class="two" href="sauna.html">
             <div class="block">
               <h5>Все для сауны</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
           <a class="three" href="kraski.html">
             <div class="block">
               <h5>Краски</h5>
+              <span class="hover"></span>
             </div>
-            <span class="hover"></span>
+            
           </a>
         </div>
       </div>
       
       <div class="friends">
-        <div class="friends_head">
+        <div class="friends_head" id="friends">
           <h2>Услуги наших партнеров</h2>
         </div>
         <div class="friends_content">
@@ -370,7 +386,29 @@
         </div>
       </div>
     </div>
+    
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
 
+        <!-- Modal content-->
+        <div class="wrap_form">
+          <form action="mail.php" method="POST">
+            <h3>Оставьте заявку</h3><button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4>и Мы с Вами свяжемся в ближайшее время</h4>
+              <div class="wrap_form_input">
+                <input type="text" placeholder="*ваше имя">
+              </div>
+              <div class="wrap_form_input">
+                <input type="text" placeholder="*номер телефона">
+              </div>
+              <div class="wrap_form_button">
+                <button>оставить заявку</button>
+              </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
