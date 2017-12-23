@@ -39,7 +39,7 @@
   margin: 0;
   width: 340px;
   outline: none;
-  padding: 10px 25px 16px 25px;
+  padding: 14px 25px 16px 25px;
   font-weight: bold;
   font-size: 28px;
   line-height: 1;
@@ -137,6 +137,12 @@
   font-weight: 900;
   font-style: normal;
 }
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
 header .logo {
   margin-top: 22px;
   float: left;
