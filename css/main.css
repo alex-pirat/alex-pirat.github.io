@@ -172,6 +172,9 @@ h6 {
   .work-social {
     display: none;
   }
+  .work-social-contact {
+    display: block;
+  }
 }
 #menu_icon,
 .close_menu {
@@ -529,8 +532,9 @@ ul {
 .content form label {
   display: none;
 }
-.content-cotnact h2 {
-  padding-left: 20px;
+.content-cotnact a {
+  text-decoration: none;
+  color: #82C12F;
 }
 .content-services ul li,
 .content-about ul li {
