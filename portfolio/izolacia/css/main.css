@@ -459,8 +459,8 @@ footer {
 
 /* -----------------------------Header--------------------------------- */
 .header {
-  background: #090716;
-  height: 70px; }
+  height: 70px;
+  background: url(../../img/backgrounds/bg__main.jpg) 0 0px; }
 
 .header__left {
   width: 18%;
@@ -600,7 +600,9 @@ footer {
 
 .slider {
   padding-top: 240px;
-  background: url(../../img/backgrounds/bg__main.jpg); }
+  background: url(../../img/backgrounds/bg__main.jpg) 0 -70px;
+  z-index: 2;
+  position: relative; }
 
 .slider__header {
   text-align: center; }
