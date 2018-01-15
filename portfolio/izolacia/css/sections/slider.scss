@@ -1,0 +1,54 @@
+.slider {
+	padding-top: 240px;
+	background: url(../../img/backgrounds/bg__main.jpg);
+}
+
+.slider__header {
+	text-align: center;
+}
+
+.slider__header-head {
+	color: #fff;
+	text-transform: uppercase;
+	@include font(bold);
+	line-height: 1;
+}
+.slider__header-dev {
+	color: #fff;
+
+	line-height: 2.3;
+	text-transform: uppercase;
+	font-size: 20px;
+	@include font(bold);
+}
+
+.slider__btn {
+	padding-top: 30px;
+	padding-bottom: 240px;
+	.btn-link {
+		border-left: 2px solid #fff;
+		border-right: 2px solid #fff;
+		-webkit-background-size: 100% 1px;
+		-moz-background-size: 100% 1px;
+		background-size: 100% 1px;
+		padding: 20px 60px;
+		&:hover {
+			border-left: 2px solid $orange;
+			border-right: 2px solid #e05277;
+		}
+		&:active {
+			.btn-link__text {
+				color: #fff;
+			}
+			background-image: -webkit-linear-gradient(left, $orange 0%, #e05277 100%), -webkit-linear-gradient(left, $orange 0%, #e05277 100%);
+			background-image: -moz-linear-gradient(left, $orange 0%, #e05277 100%), -moz-linear-gradient(left, $orange 0%, #e05277 100%);
+			background-image: -o-linear-gradient(left, $orange 0%, #e05277 100%), -o-linear-gradient(left, $orange 0%, #e05277 100%);
+			background-image: linear-gradient(to right, $orange 0%, #e05277 100%), linear-gradient(to right, $orange 0%, #e05277 100%);
+			-webkit-background-size: 100%;
+			-moz-background-size: 100%;
+			background-size: 100%;
+			border-left: 1px solid $orange;
+			border-right: 1px solid #e05277;
+		}
+	}
+}
