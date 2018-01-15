@@ -460,7 +460,7 @@ footer {
 /* -----------------------------Header--------------------------------- */
 .header {
   height: 70px;
-  background: url(../../img/backgrounds/bg__main.jpg) 0 0px; }
+  background: url(../img/backgrounds/bg__main.jpg) 0 0px; }
 
 .header__left {
   width: 18%;
@@ -600,7 +600,7 @@ footer {
 
 .slider {
   padding-top: 240px;
-  background: url(../../img/backgrounds/bg__main.jpg) 0 -70px;
+  background: url(../img/backgrounds/bg__main.jpg) 0 -70px;
   z-index: 2;
   position: relative; }
 
@@ -623,6 +623,8 @@ footer {
 .slider__btn {
   padding-top: 30px;
   padding-bottom: 240px; }
+  .slider__btn .btn-link__text {
+    font-family: 'open_sansextrabold'; }
   .slider__btn .btn-link {
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
@@ -645,6 +647,7 @@ footer {
       border-left: 1px solid #f98f64;
       border-right: 1px solid #e05277; }
       .slider__btn .btn-link:active .btn-link__text {
-        color: #fff; }
+        color: #fff;
+        font-family: 'open_sansextrabold'; }
 
 /* -----------------------------Adaptive--------------------------------- */

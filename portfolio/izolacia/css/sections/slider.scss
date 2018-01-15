@@ -1,6 +1,6 @@
 .slider {
 	padding-top: 240px;
-	background: url(../../img/backgrounds/bg__main.jpg) 0 -70px;
+	background: url(../img/backgrounds/bg__main.jpg) 0 -70px;
 	z-index: 2;
 	position: relative;
 }
@@ -27,6 +27,9 @@
 .slider__btn {
 	padding-top: 30px;
 	padding-bottom: 240px;
+	.btn-link__text {
+		@include font(bold);
+	}
 	.btn-link {
 		border-left: 2px solid #fff;
 		border-right: 2px solid #fff;
@@ -34,6 +37,7 @@
 		-moz-background-size: 100% 1px;
 		background-size: 100% 1px;
 		padding: 20px 60px;
+
 		&:hover {
 			border-left: 2px solid $orange;
 			border-right: 2px solid #e05277;
@@ -41,6 +45,7 @@
 		&:active {
 			.btn-link__text {
 				color: #fff;
+				@include font(bold);
 			}
 			background-image: -webkit-linear-gradient(left, $orange 0%, #e05277 100%), -webkit-linear-gradient(left, $orange 0%, #e05277 100%);
 			background-image: -moz-linear-gradient(left, $orange 0%, #e05277 100%), -moz-linear-gradient(left, $orange 0%, #e05277 100%);
