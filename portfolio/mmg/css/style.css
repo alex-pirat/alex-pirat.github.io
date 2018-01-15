@@ -1,0 +1,144 @@
+/* ----------------- Start styles------------------ */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Open Sans, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+/* --------------------------Basic styles--------------------------------- */
+/* Main */
+.main {
+  -webkit-box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  padding-bottom: 30px;
+}
+.main_logo {
+  margin-top: 19px;
+}
+.main_menu ul {
+  margin-top: 40px;
+}
+.main_menu li {
+  float: left;
+  margin-right: 60px;
+}
+.main_menu li:first-child {
+  margin-right: 139px;
+}
+.main_menu .active {
+  color: #42b549;
+  border-bottom: 2px solid  #42b549;
+}
+.main_menu a {
+  font-size: 15px;
+  color: #3c3c3c;
+  padding-bottom: 38px;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.main_menu a:hover,
+.main_menu a:active {
+  color: #42b549;
+  border-bottom: 2px solid  #42b549;
+}
+.main_menu_hover {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 186px;
+  margin-top: 0;
+}
+.main_menu_hover li {
+  background: #fff;
+  float: none;
+  margin-right: 0;
+  width: 229px;
+  height: 30px;
+  line-height: 1;
+  padding-top: 6px;
+  padding-left: 20px;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.main_menu_hover li:first-child {
+  margin-right: 0;
+}
+.main_menu_hover li:hover {
+  background: #f2f2f2;
+  padding-left: 11px;
+}
+.main_menu_hover a {
+  color: #666666;
+}
+.main_menu_hover a:hover {
+  border-bottom: none;
+  color: #666666;
+}
+.main_menu_products {
+  position: relative;
+}
+.main_menu_products:hover .main_menu_hover {
+  opacity: 1;
+  z-index: 9;
+  color: #000;
+}
+.main .button {
+  float: right;
+  margin-top: -15px;
+}
+.button a {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 36px;
+  background: #2c67b1;
+  -webkit-box-shadow: 2px 4px 7px 0px rgba(30, 120, 233, 0.3);
+  box-shadow: 2px 4px 7px 0px rgba(30, 120, 233, 0.3);
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.button a:hover {
+  background: #f4213a;
+  -webkit-box-shadow: 2px 4px 7px 0px rgba(255, 0, 30, 0.3);
+  box-shadow: 2px 4px 7px 0px rgba(255, 0, 30, 0.3);
+}
+/* -----------------------------Adaptive--------------------------------- */
