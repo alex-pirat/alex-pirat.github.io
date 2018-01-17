@@ -31,31 +31,13 @@
 		@include font(bold);
 	}
 	.btn-link {
-		border-left: 2px solid #fff;
-		border-right: 2px solid #fff;
-		-webkit-background-size: 100% 1px;
-		-moz-background-size: 100% 1px;
-		background-size: 100% 1px;
 		padding: 20px 60px;
 
-		&:hover {
-			border-left: 2px solid $orange;
-			border-right: 2px solid #e05277;
-		}
 		&:active {
 			.btn-link__text {
 				color: #fff;
 				@include font(bold);
 			}
-			background-image: -webkit-linear-gradient(left, $orange 0%, #e05277 100%), -webkit-linear-gradient(left, $orange 0%, #e05277 100%);
-			background-image: -moz-linear-gradient(left, $orange 0%, #e05277 100%), -moz-linear-gradient(left, $orange 0%, #e05277 100%);
-			background-image: -o-linear-gradient(left, $orange 0%, #e05277 100%), -o-linear-gradient(left, $orange 0%, #e05277 100%);
-			background-image: linear-gradient(to right, $orange 0%, #e05277 100%), linear-gradient(to right, $orange 0%, #e05277 100%);
-			-webkit-background-size: 100%;
-			-moz-background-size: 100%;
-			background-size: 100%;
-			border-left: 1px solid $orange;
-			border-right: 1px solid #e05277;
 		}
 	}
 }

@@ -540,8 +540,11 @@ footer {
   color: #f98f64;
   width: 100%;
   height: 40px;
-  border-left: 5px solid #fff;
-  border-right: 5px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-background-size: 100% 1px;
+  -moz-background-size: 100% 1px;
+  background-size: 100% 1px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -550,17 +553,14 @@ footer {
   border-radius: 50px;
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat;
-  -webkit-background-size: 100% 5px;
-  -moz-background-size: 100% 5px;
-  background-size: 100% 5px;
   background-image: -webkit-linear-gradient(left, #fff 0%, #fff 100%), -webkit-linear-gradient(left, #fff 0%, #fff 100%);
   background-image: -moz-linear-gradient(left, #fff 0%, #fff 100%), -moz-linear-gradient(left, #fff 0%, #fff 100%);
   background-image: -o-linear-gradient(left, #fff 0%, #fff 100%), -o-linear-gradient(left, #fff 0%, #fff 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff)), -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
   background-image: linear-gradient(to right, #fff 0%, #fff 100%), linear-gradient(to right, #fff 0%, #fff 100%); }
   .btn-link:hover {
-    border-left: 5px solid #f98f64;
-    border-right: 5px solid #e05277;
+    border-left: 2px solid #f98f64;
+    border-right: 2px solid #e05277;
     background-image: -webkit-linear-gradient(left, #f98f64 0%, #e05277 100%), -webkit-linear-gradient(left, #f98f64 0%, #e05277 100%);
     background-image: -moz-linear-gradient(left, #f98f64 0%, #e05277 100%), -moz-linear-gradient(left, #f98f64 0%, #e05277 100%);
     background-image: -o-linear-gradient(left, #f98f64 0%, #e05277 100%), -o-linear-gradient(left, #f98f64 0%, #e05277 100%);
@@ -577,8 +577,8 @@ footer {
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     background-size: 100%;
-    border-left: 5px solid #f98f64;
-    border-right: 5px solid #e05277; }
+    border-left: 2px solid #f98f64;
+    border-right: 2px solid #e05277; }
     .btn-link:active .btn-link__bg {
       display: none; }
     .btn-link:active .btn-link__text {
@@ -626,28 +626,9 @@ footer {
   .slider__btn .btn-link__text {
     font-family: 'open_sansextrabold'; }
   .slider__btn .btn-link {
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-    -webkit-background-size: 100% 1px;
-    -moz-background-size: 100% 1px;
-    background-size: 100% 1px;
     padding: 20px 60px; }
-    .slider__btn .btn-link:hover {
-      border-left: 2px solid #f98f64;
-      border-right: 2px solid #e05277; }
-    .slider__btn .btn-link:active {
-      background-image: -webkit-linear-gradient(left, #f98f64 0%, #e05277 100%), -webkit-linear-gradient(left, #f98f64 0%, #e05277 100%);
-      background-image: -moz-linear-gradient(left, #f98f64 0%, #e05277 100%), -moz-linear-gradient(left, #f98f64 0%, #e05277 100%);
-      background-image: -o-linear-gradient(left, #f98f64 0%, #e05277 100%), -o-linear-gradient(left, #f98f64 0%, #e05277 100%);
-      background-image: -webkit-gradient(linear, left top, right top, from(#f98f64), to(#e05277)), -webkit-gradient(linear, left top, right top, from(#f98f64), to(#e05277));
-      background-image: linear-gradient(to right, #f98f64 0%, #e05277 100%), linear-gradient(to right, #f98f64 0%, #e05277 100%);
-      -webkit-background-size: 100%;
-      -moz-background-size: 100%;
-      background-size: 100%;
-      border-left: 1px solid #f98f64;
-      border-right: 1px solid #e05277; }
-      .slider__btn .btn-link:active .btn-link__text {
-        color: #fff;
-        font-family: 'open_sansextrabold'; }
+    .slider__btn .btn-link:active .btn-link__text {
+      color: #fff;
+      font-family: 'open_sansextrabold'; }
 
 /* -----------------------------Adaptive--------------------------------- */
